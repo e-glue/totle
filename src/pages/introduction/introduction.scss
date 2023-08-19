@@ -1,0 +1,9 @@
+@use "../../styles/colors";
+@use "../../styles/typo";
+
+.test {
+  font-family: typo.$notosans;
+  color: colors.$primary;
+  font-size: 64px;
+  font-weight: 700;
+}
