@@ -1,18 +1,14 @@
+import { useState } from "react";
 import "../../styles/styles.scss";
 import "./pricing.scss";
 import NavBar from "./components/NavBar";
 import Button from "./components/Button";
 import PricingToggle from "./components/PricingToggle";
-import { useState } from "react";
 
 const Pricing = () => {
   const [isToggle, setIsToggle] = useState(true);
 
-  const onChangeToggleHandler = () => {
-    setIsToggle(!isToggle);
-    console.log(isToggle);
-    return;
-  };
+  const onChangeToggleHandler = () => setIsToggle(!isToggle);
 
   return (
     <>
