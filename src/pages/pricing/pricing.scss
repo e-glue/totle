@@ -2,13 +2,20 @@
 @use "../../styles/typo";
 
 // * layout
-.pricing-bg {
-  background-color: colors.$bg03;
+.pricing-container {
   padding: 100px 0;
+
+  &.color-bg {
+    background-color: colors.$bg03;
+  }
 }
 
 .width-1304 {
   max-width: 1304px;
+}
+
+.width-1130 {
+  max-width: 1130px;
 }
 
 // * title
@@ -31,7 +38,7 @@
     font-size: 24px;
     font-weight: 400;
 
-    span {
+    em {
       color: colors.$primary;
       font-weight: 700;
     }
@@ -175,4 +182,106 @@
   font-size: 14px;
   font-weight: 500;
   margin-top: 12px;
+}
+
+// * comparison table
+.table-wrapper {
+  padding-bottom: 60px;
+}
+
+.table-sticky-header {
+  position: sticky;
+  background-color: colors.$white;
+  top: 0px;
+
+  .pricing-sticky-table {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+
+    .table-title-en {
+      color: colors.$grayscale01;
+      font-family: typo.$poppins;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .table-title-price {
+      color: colors.$grayscale04;
+      font-family: typo.$poppins;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    th {
+      height: 126px;
+      vertical-align: middle;
+      border: 1px solid colors.$border03;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    td {
+      background-color: colors.$bg01;
+      border: 1px solid colors.$border03;
+      padding: 24px;
+
+      &:first-child {
+        border: none;
+        border-bottom: 1px solid colors.$border03;
+        background-color: colors.$white;
+      }
+    }
+  }
+}
+
+.pricing-table {
+  width: 100%;
+  color: colors.$grayscale05;
+  font-family: typo.$notosans;
+  display: table;
+  table-layout: fixed;
+
+  th {
+    height: 60px;
+    padding: 16px;
+    background-color: colors.$bg04;
+    border: 1px solid colors.$border03;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  td {
+    height: 60px;
+    padding: 16px;
+    border: 1px solid colors.$border03;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+
+    .table-small-text {
+      font-size: 13px;
+    }
+
+    img {
+      margin: -4px 0;
+    }
+
+    &:first-child {
+      text-align: left;
+      letter-spacing: -1px;
+    }
+  }
 }
