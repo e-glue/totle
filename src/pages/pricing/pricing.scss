@@ -1,5 +1,6 @@
 @use "../../styles/colors";
 @use "../../styles/typo";
+@use "../../styles/theme";
 
 // * layout
 .pricing-container {
@@ -20,8 +21,6 @@
 
 // * title
 .title-group {
-  margin-bottom: 97px;
-
   .title {
     color: colors.$grayscale01;
     font-family: typo.$notosans;
@@ -37,11 +36,22 @@
     text-align: center;
     font-size: 24px;
     font-weight: 400;
+    word-break: keep-all;
 
     em {
       color: colors.$primary;
       font-weight: 700;
     }
+  }
+
+  @media screen and (theme.$desktopSize) {
+    margin-bottom: 97px;
+  }
+  @media screen and (theme.$tabletSize) {
+    margin-bottom: 52px;
+  }
+  @media screen and (theme.$mobileSize) {
+    margin-bottom: 52px;
   }
 }
 
@@ -52,7 +62,7 @@
   justify-content: center;
   align-items: center;
   gap: 16px;
-  padding-left: 194px;
+
   margin-bottom: 44px;
 
   .toggle-guide {
@@ -62,24 +72,62 @@
     font-size: 16px;
     font-weight: 700;
   }
+
+  @media screen and (theme.$desktopSize) {
+    flex-direction: row;
+    padding-left: 194px;
+  }
+  @media screen and (theme.$tabletSize) {
+    flex-direction: column;
+  }
+  @media screen and (theme.$mobileSize) {
+    flex-direction: column;
+  }
 }
 
 // * plan
 .plan-container {
   display: flex;
   justify-content: center;
-  gap: 23px;
-}
 
-.plan-box {
-  flex-grow: 1;
-  max-width: 308px;
-  min-width: 220px;
-  min-height: 653px;
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid colors.$primary;
-  background: colors.$white;
+  .plan-box {
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid colors.$primary;
+    background: colors.$white;
+  }
+
+  @media screen and (theme.$desktopSize) {
+    gap: 23px;
+
+    .plan-box {
+      max-width: 308px;
+      min-width: 220px;
+      min-height: 653px;
+    }
+  }
+  @media screen and (theme.$tabletSize) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 80px;
+    gap: 52px;
+
+    .plan-box {
+      width: 100%;
+    }
+  }
+  @media screen and (theme.$mobileSize) {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 64px;
+    gap: 48px;
+
+    .plan-box {
+      width: 100%;
+      min-width: 320px;
+    }
+  }
 }
 
 .plan-title-group {
@@ -173,18 +221,58 @@
       margin-left: 24px;
     }
   }
+
+  @media screen and (theme.$tabletSize) {
+    display: none;
+  }
+  @media screen and (theme.$mobileSize) {
+    display: none;
+  }
 }
 
 .plan-guide {
   font-family: typo.$notosans;
   color: colors.$grayscale06;
-  text-align: right;
   font-size: 14px;
   font-weight: 500;
-  margin-top: 12px;
+  line-height: 21px;
+
+  @media screen and (theme.$desktopSize) {
+    margin-top: 12px;
+    text-align: right;
+
+    &.m {
+      display: none;
+    }
+  }
+  @media screen and (theme.$tabletSize) {
+    margin-top: 32px;
+    padding: 0 80px;
+
+    &.pc {
+      display: none;
+    }
+  }
+  @media screen and (theme.$mobileSize) {
+    margin-top: 32px;
+    padding: 0 64px;
+
+    &.pc {
+      display: none;
+    }
+  }
 }
 
 // * comparison table
+.compare-wrapper {
+  @media screen and (theme.$tabletSize) {
+    display: none;
+  }
+  @media screen and (theme.$mobileSize) {
+    display: none;
+  }
+}
+
 .table-wrapper {
   padding-bottom: 60px;
 }
