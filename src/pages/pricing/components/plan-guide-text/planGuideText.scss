@@ -1,0 +1,36 @@
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
+@use "../../../../styles/theme";
+
+.plan-guide {
+  font-family: typo.$notosans;
+  color: colors.$grayscale06;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+
+  @media screen and (theme.$desktopSize) {
+    margin-top: 12px;
+    text-align: right;
+
+    &.m {
+      display: none;
+    }
+  }
+  @media screen and (theme.$tabletSize) {
+    margin-top: 32px;
+    padding: 0 80px;
+
+    &.pc {
+      display: none;
+    }
+  }
+  @media screen and (theme.$mobileSize) {
+    margin-top: 32px;
+    padding: 0 64px;
+
+    &.pc {
+      display: none;
+    }
+  }
+}
