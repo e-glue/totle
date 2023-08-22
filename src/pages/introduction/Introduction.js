@@ -1,5 +1,6 @@
 import "../../styles/styles.scss";
 import "./introduction.scss";
+import WistiaPlayer from './components/WistiaPlayer';
 import Banner from "./components/Banner"
 
 const Introduction = () => {
@@ -23,11 +24,12 @@ const Introduction = () => {
           </div>
         </div>
         <div className="video-wrapper">
-        <video src="https://haoriented.wistia.com/medias/4pzjgbcafvwvideo=4pzjgbcafv"
-        controls className="play-video"/>
+        <WistiaPlayer
+          videoId="4pzjgbcafv"
+          wrapper="wistia-player-container-1"
+        />
         </div>
       </div>
-
       <div className="product-wrapper">
         <div className="product-text">
           <p className="t1">Product Tour 👇</p>
