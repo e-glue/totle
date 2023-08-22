@@ -5,11 +5,20 @@ import PlanGuideText from "../plan-guide-text/PlanGuideText";
 import PricingToggle from "../pricing-toggle/PricingToggle";
 import SectionTitle from "../section-title/SectionTitle";
 
+const SECTION_TITLE = {
+  title: "토들 구독요금",
+  subTitle: (
+    <>
+      나에게 <em>딱 맞는 구독 플랜</em>을 선택해보세요!
+    </>
+  ),
+};
+
 const PlanSection = ({ onChangeToggleHandler, isToggle }) => {
   return (
     <section className="pricing-container color-bg">
       <div className="wrap-container width-1304">
-        <SectionTitle />
+        <SectionTitle titleData={SECTION_TITLE} />
         <article>
           <div className="toggle-wrapper">
             <PricingToggle onChange={onChangeToggleHandler} />
