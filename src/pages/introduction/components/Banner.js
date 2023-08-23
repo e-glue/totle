@@ -10,82 +10,120 @@ import customer8 from "../../../assets/introduction/한국리ᄉ�
 import customer9 from "../../../assets/introduction/한국폴리아세탈.png";
 import customer10 from "../../../assets/introduction/현대-LNG.png";
 
-
-
 const Banner = () => {
   return (
-    <div className="banner">  
+    <div className="banner">
       <div className="banner-list">
         <ul>
           <div className="banner-item original">
             <li>
-              <div className='banner-img'><img src={customer1}/></div>
+              <div className="banner-img">
+                <img src={customer1} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer2}/></div>
+              <div className="banner-img">
+                <img src={customer2} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer3}/></div>
+              <div className="banner-img">
+                <img src={customer3} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer4}/></div>
+              <div className="banner-img">
+                <img src={customer4} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer5}/></div>
+              <div className="banner-img">
+                <img src={customer5} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer6}/></div>
+              <div className="banner-img">
+                <img src={customer6} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer7}/></div>
+              <div className="banner-img">
+                <img src={customer7} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer8}/></div>
+              <div className="banner-img">
+                <img src={customer8} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer9}/></div>
+              <div className="banner-img">
+                <img src={customer9} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer10}/></div>
+              <div className="banner-img">
+                <img src={customer10} />
+              </div>
             </li>
           </div>
-        {/* banner-clone */}
+          {/* banner-clone */}
           <div className="banner-item clone">
             <li>
-              <div className='banner-img'><img src={customer1}/></div>
+              <div className="banner-img">
+                <img src={customer1} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer2}/></div>
+              <div className="banner-img">
+                <img src={customer2} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer3}/></div>
+              <div className="banner-img">
+                <img src={customer3} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer4}/></div>
+              <div className="banner-img">
+                <img src={customer4} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer5}/></div>
+              <div className="banner-img">
+                <img src={customer5} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer6}/></div>
+              <div className="banner-img">
+                <img src={customer6} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer7}/></div>
+              <div className="banner-img">
+                <img src={customer7} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer8}/></div>
+              <div className="banner-img">
+                <img src={customer8} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer9}/></div>
+              <div className="banner-img">
+                <img src={customer9} />
+              </div>
             </li>
             <li>
-              <div className='banner-img'><img src={customer10}/></div>
+              <div className="banner-img">
+                <img src={customer10} />
+              </div>
             </li>
           </div>
         </ul>
       </div>
-    </div>  
-  )
-}
+    </div>
+  );
+};
 
 export default Banner;
