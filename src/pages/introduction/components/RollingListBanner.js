@@ -1,4 +1,4 @@
-import "./Banner.scss";
+import "./RollingListBanner.scss";
 import customer1 from "../../../assets/introduction/DGB-캐피탈.png";
 import customer2 from "../../../assets/introduction/SKC-인프라서비스.png";
 import customer3 from "../../../assets/introduction/대학내일.png";

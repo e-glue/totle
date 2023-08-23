@@ -1,7 +1,7 @@
 import "../../styles/styles.scss";
 import "./introduction.scss";
 import WistiaPlayer from "./components/WistiaPlayer";
-import Banner from "./components/Banner";
+import Banner from "./components/RollingListBanner";
 
 const Introduction = () => {
   return (
