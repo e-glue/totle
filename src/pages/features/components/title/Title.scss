@@ -1,0 +1,28 @@
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
+@use "../../../../styles/theme";
+
+.title-group {
+  display: grid;
+  place-items: center;
+
+  .eng-title {
+    color: colors.$primary;
+    font-size: 20px;
+    text-align: center;
+    font-family: typo.$notosans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 81px; /* 위쪽 간격 설정 */
+  }
+  .kor-title {
+    color: #000;
+    font-size: 30px;
+    text-align: center;
+    font-family: typo.$notosans;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
