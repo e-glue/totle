@@ -1,14 +1,14 @@
 import "./RollingListBanner.scss";
-import customer1 from "../../../assets/introduction/DGB-캐피탈.png";
-import customer2 from "../../../assets/introduction/SKC-인프라서비스.png";
-import customer3 from "../../../assets/introduction/대학내일.png";
-import customer4 from "../../../assets/introduction/밀리의서재.png";
-import customer5 from "../../../assets/introduction/시원스쿨.png";
-import customer6 from "../../../assets/introduction/에스케이브로드밴드.png";
-import customer7 from "../../../assets/introduction/코스맥스.png";
-import customer8 from "../../../assets/introduction/한국리서치.png";
-import customer9 from "../../../assets/introduction/한국폴리아세탈.png";
-import customer10 from "../../../assets/introduction/현대-LNG.png";
+import customer1 from "../../../assets/introduction/dgb-capital.png";
+import customer2 from "../../../assets/introduction/skc-infraservice.png";
+import customer3 from "../../../assets/introduction/unives.png";
+import customer4 from "../../../assets/introduction/millie.png";
+import customer5 from "../../../assets/introduction/siwonschool.png";
+import customer6 from "../../../assets/introduction/sk-broadband.png";
+import customer7 from "../../../assets/introduction/cosmax.png";
+import customer8 from "../../../assets/introduction/hankook-research.png";
+import customer9 from "../../../assets/introduction/kpac.png";
+import customer10 from "../../../assets/introduction/hyundai-lng.png";
 
 const Banner = () => {
   return (
