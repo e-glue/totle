@@ -5,8 +5,8 @@ const PLAN_DATA_LIST = [
   {
     name: "FREE",
     nameKr: "무료",
-    monthlyPrice: "0",
-    yearlyPrice: ["0", ""],
+    monthlyPrice: ["0", "월"],
+    yearlyPrice: ["0", "월"],
     buttonTitle: "무료로 시작",
     buttonDesign: "lined",
     buttonLink: "http://www.totlelab.com/download",
@@ -27,8 +27,8 @@ const PLAN_DATA_LIST = [
   {
     name: "PERSONAL",
     nameKr: "퍼스널",
-    monthlyPrice: "5,000",
-    yearlyPrice: ["50,000", "약 4,167원/월"],
+    monthlyPrice: ["5,000", "월"],
+    yearlyPrice: ["50,000", "1년", "약 4,167원/월"],
     buttonTitle: "구독하기",
     buttonDesign: "filled",
     buttonLink: "https://smartstore.naver.com/egluecloud/products/7082495548",
@@ -50,8 +50,8 @@ const PLAN_DATA_LIST = [
   {
     name: "BUSINESS",
     nameKr: "비즈니스",
-    monthlyPrice: "12,000",
-    yearlyPrice: ["120,000", "약 10,000원/월"],
+    monthlyPrice: ["12,000", "월"],
+    yearlyPrice: ["120,000", "1년", "약 10,000원/월"],
     buttonTitle: "구독하기",
     buttonDesign: "filled",
     buttonLink: () => {
@@ -72,8 +72,8 @@ const PLAN_DATA_LIST = [
   {
     name: "ENTERPRISE",
     nameKr: "엔터프라이즈",
-    monthlyPrice: "15,000",
-    yearlyPrice: ["150,000", "약 12,500원/월"],
+    monthlyPrice: ["15,000", "월"],
+    yearlyPrice: ["150,000", "1년", "약 12,500원/월"],
     buttonTitle: "문의하기",
     buttonDesign: "filled",
     buttonLink:
@@ -101,7 +101,7 @@ const PlanBoxGroup = ({ isToggle }) => {
   return (
     <div className="plan-container">
       {PLAN_DATA_LIST.map((planData) => (
-        <PlanBox planData={planData} isToggle={isToggle} />
+        <PlanBox planData={planData} isToggle={isToggle} key={planData.name} />
       ))}
     </div>
   );

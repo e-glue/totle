@@ -1,0 +1,48 @@
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
+
+.pricing-table {
+  width: 100%;
+  color: colors.$grayscale05;
+  font-family: typo.$notosans;
+  display: table;
+  table-layout: fixed;
+
+  th {
+    height: 60px;
+    padding: 16px;
+    background-color: colors.$bg04;
+    border: 1px solid colors.$border03;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: 700;
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  td {
+    height: 60px;
+    padding: 16px;
+    border: 1px solid colors.$border03;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+
+    .table-small-text {
+      font-size: 13px;
+    }
+
+    img {
+      margin: -4px 0;
+    }
+
+    &:first-child {
+      text-align: left;
+      letter-spacing: -1px;
+    }
+  }
+}
