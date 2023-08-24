@@ -1,0 +1,298 @@
+@use "../../styles/colors";
+@use "../../styles/typo";
+@use "../../styles/theme";
+
+.contact-container {
+  padding: 64px 0;
+  background-color: colors.$bg03;
+}
+
+.title {
+  color: colors.$primary;
+  font-family: typo.$poppins;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.qna-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 72px;
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    .any-q-container {
+      .any-q-title {
+        color: #000;
+        font-family: Noto Sans KR;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        // text-align: center;
+
+        padding-left: 170px;
+        padding-top: 85px;
+      }
+      .any-q-title-txt {
+        color: #575d5e;
+        font-family: Noto Sans KR;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        // text-align: center;
+
+        padding-left: 172px;
+        padding-top: 19px;
+      }
+    }
+
+    .faq-container {
+      order: 2;
+
+      .faq-title {
+        color: #006bff;
+        text-align: center;
+        font-family: Noto Sans KR;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        padding-top: 78px;
+        padding-bottom: 28px;
+        padding-left: 246px;
+      }
+
+      .faq {
+        padding-left: 182px;
+
+        .faq-box {
+          width: 466px;
+          height: 62px;
+          border-radius: 7px;
+          border: 1.5px solid #d0d7e7;
+          background: #fff;
+
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 12px;
+
+          .faq-content {
+            color: #333;
+            font-family: Noto Sans KR;
+            font-size: 24px;
+            font-weight: 400;
+
+            padding-left: 23px;
+            padding-top: 14px;
+          }
+
+          .faq-detail {
+            padding-right: 16px;
+            padding-top: 13px;
+          }
+        }
+      }
+
+      .other-faq {
+        padding-top: 10px;
+        padding-left: 473px;
+      }
+    }
+  }
+
+  .row {
+    padding-right: 104px;
+    padding-top: 56px;
+
+    .q-container {
+      width: 616px;
+      height: 937px;
+      flex-shrink: 0;
+      border-radius: 19px;
+      border: 1px solid #d9d9d9;
+      background: #fff;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      .q-title {
+        color: #000;
+        font-family: Noto Sans KR;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+
+        text-align: center;
+
+        padding-top: 43px;
+      }
+
+      .q-title-txt {
+        color: #6c6c6c;
+        text-align: center;
+        font-family: Noto Sans KR;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        text-align: center;
+        padding-top: 9px;
+      }
+
+      .id {
+        display: flex;
+        justify-content: space-between;
+
+        .id-title {
+          color: #6c6c6c;
+          font-family: Noto Sans KR;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          padding-top: 30px;
+          padding-left: 47px;
+          padding-bottom: 8px;
+
+          .star {
+            color: #ff0202;
+            font-family: Noto Sans KR;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        .required {
+          color: #ff0202;
+          font-family: Noto Sans KR;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          padding-top: 34px;
+          padding-right: 42px;
+        }
+      }
+
+      .inputs {
+        padding-left: 43px;
+
+        .input-info {
+          width: 537px;
+          height: 60px;
+          border-radius: 9px;
+          border: 1px solid #d9d9d9;
+          background: #fff;
+
+          padding-left: 23px;
+          padding-top: 14px;
+          padding-bottom: 14px;
+
+          &::placeholder {
+            color: #d9d9d9;
+            font-family: Noto Sans KR;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+          }
+        }
+
+        .tell {
+          color: #6c6c6c;
+          font-family: Noto Sans KR;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          padding-top: 21px;
+          padding-left: 47px;
+          padding-bottom: 8px;
+        }
+      }
+
+      .q-contents {
+        display: flex;
+        justify-content: space-between;
+
+        .q-contents-title {
+          color: #6c6c6c;
+          font-family: Noto Sans KR;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          padding-top: 26px;
+          padding-left: 46px;
+          padding-bottom: 15px;
+        }
+
+        .star {
+          color: #ff0202;
+          font-family: Noto Sans KR;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .required {
+          color: #ff0202;
+          font-family: Noto Sans KR;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+
+          padding-right: 41px;
+          padding-top: 30px;
+        }
+      }
+
+      .input-q {
+        width: 537px;
+        height: 125px;
+        border-radius: 9px;
+        border: 1px solid #d9d9d9;
+        background: #fff;
+
+        margin-left: 42px;
+      }
+
+      .error-file-upload {
+        color: #6c6c6c;
+        font-family: Noto Sans KR;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        padding-top: 26px;
+        padding-left: 46px;
+      }
+
+      .agree {
+        color: #6c6c6c;
+        font-family: Noto Sans KR;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        padding-top: 12px;
+        padding-left: 43px;
+      }
+    }
+  }
+}
