@@ -1,5 +1,6 @@
 import "./planBox.scss";
 import Button from "../button/Button";
+import { useButtonLinkHandler } from "../../utills/useButtonLinkHandler";
 
 const PlanBox = ({ planData, isToggle }) => {
   const {
@@ -13,13 +14,6 @@ const PlanBox = ({ planData, isToggle }) => {
     featuresTitle,
     features,
   } = planData;
-
-  let openLink;
-  if (typeof buttonLink != "function") {
-    openLink = () => window.open(buttonLink);
-  } else {
-    openLink = () => buttonLink();
-  }
 
   return (
     <div className="plan-box">
@@ -39,15 +33,15 @@ const PlanBox = ({ planData, isToggle }) => {
         className="rounded-button"
         size="lg"
         design={buttonDesign}
-        onClick={openLink}
+        onClick={useButtonLinkHandler(buttonLink)}
       >
         {buttonTitle}
       </Button>
       <div className="plan-feat-wrapper">
         <p className="plan-feat-title">{featuresTitle}</p>
         <ul className="plan-feat">
-          {features.map((feature) => (
-            <li>{feature}</li>
+          {features.map((feature, index) => (
+            <li key={index}>{feature}</li>
           ))}
         </ul>
       </div>

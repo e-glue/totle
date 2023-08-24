@@ -101,7 +101,7 @@ const PlanBoxGroup = ({ isToggle }) => {
   return (
     <div className="plan-container">
       {PLAN_DATA_LIST.map((planData) => (
-        <PlanBox planData={planData} isToggle={isToggle} />
+        <PlanBox planData={planData} isToggle={isToggle} key={planData.name} />
       ))}
     </div>
   );
