@@ -14,7 +14,7 @@ const PlanBox = ({ planData, isToggle }) => {
     featuresTitle,
     features,
   } = planData;
-
+  
   return (
     <div className="plan-box">
       <hgroup className="plan-title-group">
