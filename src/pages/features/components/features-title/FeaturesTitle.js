@@ -1,6 +1,6 @@
-import "./Title.scss";
+import "./FeaturesTitle.scss";
 
-const Title = () => {
+const FeaturesTitle = () => {
   return (
     <hgroup className="title-group">
       <h1 className="eng-title">Multiple Sending Options</h1>
@@ -9,4 +9,4 @@ const Title = () => {
   );
 };
 
-export default Title;
+export default FeaturesTitle;

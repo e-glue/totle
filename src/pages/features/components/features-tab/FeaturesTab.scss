@@ -15,7 +15,6 @@
   height: 66px;
   border-radius: 12px;
   text-align: center;
-}
 
 .button {
   flex-direction: row;
@@ -27,11 +26,15 @@
   font-weight: 700;
   padding: 14px 24px;
   border-radius: 8px;
-  color: colors.$secondary;
   cursor: pointer;
-
-  &.active {
-    background-color: colors.$bg01;
-    color: colors.$primary;
-  }
+}
+// .buton.selected{
+//   background-color: colors.$bg01;
+//   color: colors.$primary;
+// }
+// 버튼이 선택되었을 때에 hover 스타일을 유지시키고자 함.
+}
+.button:hover{
+  background-color: colors.$bg01;
+  color: colors.$primary;
 }
