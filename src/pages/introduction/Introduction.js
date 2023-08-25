@@ -2,7 +2,6 @@ import "../../styles/styles.scss";
 import "./introduction.scss";
 import SectionTop from "./components/section-top/SectionTop";
 import SectionProduct from "./components/section-product/SectionProduct";
-import Banner from "./components/RollingListBanner";
 
 const Introduction = () => {
   return (
@@ -15,9 +14,7 @@ const Introduction = () => {
           <br />
           <span className="t2">개인 및 기업 사용자</span>가 사용 중 입니다.
         </div>
-        <div className="customer-banner">
-          <Banner></Banner>
-        </div>
+        <div className="customer-banner">{/* <Banner></Banner> */}</div>
       </div>
     </div>
   );
