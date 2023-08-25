@@ -47,11 +47,15 @@ const Introduction = () => {
           </p>
         </div>
         <div className="product-frame">
-          <iframe
-            class="totle-storylane"
-            src="https://totle.storylane.io/share/rsg6yhadwehm"
-            allow="fullscreen; camera; microphone"
-          ></iframe>
+          <div className="frame-wrapper">
+            <div className="frame">
+              <iframe
+                src="https://totle.storylane.io/demo/rsg6yhadwehm"
+                allow="fullscreen; camera; microphone"
+                className="frame-embed"
+              ></iframe>
+            </div>
+          </div>
         </div>
       </div>
 
