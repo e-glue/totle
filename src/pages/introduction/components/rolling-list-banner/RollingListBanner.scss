@@ -17,7 +17,6 @@
   }
 }
 
-
 .banner-item {
   display: flex;
   overflow: hidden;
@@ -31,33 +30,11 @@
   }
 }
 
-.banner-img {
-  width: 153px;
-  height: 58px;
-}
-
-.banner-img > img {
-  width: 100%;
-  height: 100%;
-}
-
-@media screen and (theme.$tabletSize) { 
-  .banner-img {
-    width: 119px;
-    height: 45px;
-  }
-}
-
 @media screen and (theme.$mobileSize) { 
   .banner-list {
     width: 430px;
   }
-  .banner-img {
-    width: 110px;
-    height: 36px;
-  }
 }
-
 
 @keyframes infiniteAnimation1 {
   0% {
