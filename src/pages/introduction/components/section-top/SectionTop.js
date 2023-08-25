@@ -1,5 +1,5 @@
 import "./sectionTop.scss";
-import WistiaPlayer from "../WistiaPlayer";
+import WistiaPlayer from "../wistia-player/WistiaPlayer";
 
 const SectionTop = () => {
   return (
