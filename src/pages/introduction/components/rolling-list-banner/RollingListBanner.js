@@ -9,116 +9,43 @@ import customer7 from "../../../../assets/introduction/cosmax.png";
 import customer8 from "../../../../assets/introduction/hankook-research.png";
 import customer9 from "../../../../assets/introduction/kpac.png";
 import customer10 from "../../../../assets/introduction/hyundai-lng.png";
+import Banner from "../banner/Banner";
 
-const Banner = () => {
+const RollingListBanner = () => {
+  const customers = [
+    customer1,
+    customer2,
+    customer3,
+    customer4,
+    customer5,
+    customer6,
+    customer7,
+    customer8,
+    customer9,
+    customer10,
+  ];
   return (
     <div className="banner">
       <div className="banner-list">
         <ul>
           <div className="banner-item original">
-            <li>
-              <div className="banner-img">
-                <img src={customer1} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer2} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer3} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer4} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer5} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer6} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer7} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer8} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer9} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer10} />
-              </div>
-            </li>
+            {customers.map((customer) => {
+              return (
+                <li>
+                  <Banner customer={customer}></Banner>
+                </li>
+              );
+            })}
           </div>
           {/* banner-clone */}
           <div className="banner-item clone">
-            <li>
-              <div className="banner-img">
-                <img src={customer1} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer2} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer3} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer4} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer5} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer6} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer7} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer8} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer9} />
-              </div>
-            </li>
-            <li>
-              <div className="banner-img">
-                <img src={customer10} />
-              </div>
-            </li>
+            {customers.map((customer) => {
+              return (
+                <li>
+                  <Banner customer={customer}></Banner>
+                </li>
+              );
+            })}
           </div>
         </ul>
       </div>
@@ -126,4 +53,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default RollingListBanner;
