@@ -7,9 +7,9 @@ import SectionCustomer from "./components/section-customer/SectionCustomer";
 const Introduction = () => {
   return (
     <div className="wrap-container width">
-      <SectionTop></SectionTop>
-      <SectionProduct></SectionProduct>
-      <SectionCustomer></SectionCustomer>
+      <SectionTop />
+      <SectionProduct />
+      <SectionCustomer />
     </div>
   );
 };

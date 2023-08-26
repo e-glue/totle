@@ -32,7 +32,7 @@ const RollingListBanner = () => {
             {customers.map((customer) => {
               return (
                 <li>
-                  <Banner customer={customer}></Banner>
+                  <Banner customer={customer} />
                 </li>
               );
             })}
@@ -42,7 +42,7 @@ const RollingListBanner = () => {
             {customers.map((customer) => {
               return (
                 <li>
-                  <Banner customer={customer}></Banner>
+                  <Banner customer={customer} />
                 </li>
               );
             })}

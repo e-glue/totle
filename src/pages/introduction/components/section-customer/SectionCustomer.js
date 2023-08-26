@@ -1,5 +1,5 @@
 import "./sectionCustomer.scss";
-import Banner from "../rolling-list-banner/RollingListBanner";
+import RollingListBanner from "../rolling-list-banner/RollingListBanner";
 
 const SectionCustomer = () => {
   return (
@@ -10,7 +10,7 @@ const SectionCustomer = () => {
         <span className="t2">개인 및 기업 사용자</span>가 사용 중 입니다.
       </div>
       <div className="customer-banner">
-        <Banner></Banner>
+        <RollingListBanner />
       </div>
     </div>
   );
