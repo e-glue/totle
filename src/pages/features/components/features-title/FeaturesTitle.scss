@@ -14,10 +14,10 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    margin-top: 80px; /* 위쪽 간격 설정 */
+    margin-top: 80px;
   }
   .kor-title {
-    color: #000;
+    color: colors.$grayscale01;
     font-size: 30px;
     text-align: center;
     font-family: typo.$notosans;

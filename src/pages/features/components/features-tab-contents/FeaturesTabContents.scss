@@ -64,11 +64,11 @@
     cursor: pointer;
 
     .button {
-      color: #4d4e50;
-      border: 1.5px solid #d0d7e7;
+      color: colors.$grayscale04;
+      border: 1.5px solid colors.$border01;
       border-radius: 7px;
       text-align: center;
-      font-family: Noto Sans KR;
+      font-family: typo.$notosans;
       font-size: 17px;
       font-style: normal;
       font-weight: 700;
@@ -78,10 +78,10 @@
     }
   }
   .button:hover {
-    background: #f5f7fe;
-    color: #006bff;
+    background: colors.$bg03;
+    color: colors.$primary;
     border-radius: 7px;
-    border: 1.5px solid #006bff;
+    border: 1.5px solid colors.$primary;
   }
 
   .right-content {
