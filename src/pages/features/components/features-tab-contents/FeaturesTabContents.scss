@@ -5,28 +5,38 @@
 .content-container {
   width: fit-content;
   display: flex;
-  // flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 10px;
   margin: 0 auto;
   gap: 20px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 40px;
+  @media screen and (theme.$mobileSize){
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+  }
 
   .left-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 20px;
-    .selected-title {
+    gap: 36px;
+      .selected-title {
       color: colors.$grayscale01;
       font-family: typo.$notosans;
       font-size: 32px;
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      text-align: left;
+      @media screen and (theme.$mobileSize){
+        margin-top: 10px;
+      }
     }
     .description {
       color: colors.$grayscale06;
@@ -36,6 +46,12 @@
       font-weight: 400;
       line-height: normal;
       padding: 14px 24px;
+      width: 330px;
+      text-align: left;
+      word-break: keep-all;
+      @media screen and (theme.$mobileSize){
+        margin-top: -30px;
+      }
     }
   }
   .link-button {
@@ -44,8 +60,8 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    background: #f5f7fe;
-    gap:20px;
+    gap: 12px;
+    cursor: pointer;
 
     .button {
       color: #4d4e50;
@@ -75,10 +91,33 @@
     gap: 20px;
     .image {
       height: auto;
-      width: 440px;
-      .image11 {
+      width: 600px;
+      .img {
         max-width: 100%;
+        @media screen and (theme.$mobileSize){
+          max-width: 100%;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          display: flex;
+        }
+      }
+      @media screen and (theme.$mobileSize) {
+        max-width: 100%;
+        width: 640px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        display: flex;
       }
     }
+  }
+
+  @media screen and (theme.$mobileSize) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
   }
 }

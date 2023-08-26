@@ -1,6 +1,6 @@
 @use "../../../../styles/colors";
 @use "../../../../styles/typo";
-@use "../../../../styles/theme";
+// @use "../../../../styles/theme";
 
 .button-container {
   width: fit-content;
@@ -15,26 +15,24 @@
   height: 66px;
   border-radius: 12px;
   text-align: center;
+  text-align: left;
+  word-break: keep-all;
+  margin-top: 30px;
+  .button {
+    flex-direction: row;
+    color: colors.$secondary;
+    text-align: center;
+    align-items: center;
+    font-family: typo.$notosans;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 24px;
+    border-radius: 8px;
+    cursor: pointer;
 
-.button {
-  flex-direction: row;
-  color: colors.$secondary;
-  text-align: center;
-  align-items: center;
-  font-family: typo.$notosans;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 14px 24px;
-  border-radius: 8px;
-  cursor: pointer;
-}
-// .buton.selected{
-//   background-color: colors.$bg01;
-//   color: colors.$primary;
-// }
-// 버튼이 선택되었을 때에 hover 스타일을 유지시키고자 함.
-}
-.button:hover{
-  background-color: colors.$bg01;
-  color: colors.$primary;
+    &.selected {
+      background-color: colors.$bg01;
+      color: colors.$primary;
+    }
+  }
 }
