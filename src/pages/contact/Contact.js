@@ -1,8 +1,27 @@
-import NavBar from "./components/nav-bar/NavBar";
+import { useRef, useEffect, useCallback, useState } from "react";
 import "./contact.scss";
+import NavBar from "./components/nav-bar/NavBar";
 import Button from "./components/button/Button";
 
 const Contact = () => {
+  const inputEl = useRef(null);
+  const [fileName, setFileName] = useState("");
+  const fileInputHandler = useCallback((event) => {
+    const files = event.target && event.target.files;
+    if (files && files[0]) {
+      setFileName(event.target.files[0].name);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (inputEl.current !== null) {
+      inputEl.current.addEventListener("input", fileInputHandler);
+    }
+    return () => {
+      inputEl.current.removeEventListener("input", fileInputHandler);
+    };
+  }, []);
+
   return (
     <>
       <NavBar />
@@ -137,9 +156,10 @@ const Contact = () => {
                 오류 시 생성되는 오류 로그 파일을 첨부해주세요.
               </div>
               <label for="file">
-                <div class="btn-upload">파일 업로드</div>
+                <div className="btn-upload">파일 업로드</div>
               </label>
-              <input type="file" name="file" id="file"></input>
+              <input type="file" name="file" id="file" ref={inputEl}></input>
+              {fileName ? <p className="file-name">{fileName}</p> : ""}
               <Button className="contact-button">제출하기</Button>
               <div className="agree">
                 ∙ 제출하기를 클릭하면 당사의 개인정보 처리 방침에 동의한 것으로
