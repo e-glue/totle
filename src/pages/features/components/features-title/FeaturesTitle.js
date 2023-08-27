@@ -1,8 +1,8 @@
 import "./FeaturesTitle.scss";
 
-const FeaturesTitle = ({titleEg, titleKr}) => {
+const FeaturesTitle = ({ titleEg, titleKr }) => {
   return (
-    <hgroup className="title-group">
+    <hgroup className="tab-title-group">
       <h1 className="eng-title">{titleEg}</h1>
       <h2 className="kor-title">{titleKr}</h2>
     </hgroup>
