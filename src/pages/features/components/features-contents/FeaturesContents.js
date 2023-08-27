@@ -21,9 +21,11 @@ const FeaturesContents = ({data, dataOrderList}) => {
 },[])
   return (
     <>
-        {
-            isMobile ? <Dropdown data={data} dataOrderList={dataOrderList} selected={selected} setSelected={setSelected} /> : <FeaturesTab data={data} dataOrderList={dataOrderList} selected={selected} setSelected={setSelected} />
-        }
+      {
+        isMobile ? 
+          <Dropdown data={data} dataOrderList={dataOrderList} selected={selected} setSelected={setSelected} /> : 
+          <FeaturesTab data={data} dataOrderList={dataOrderList} selected={selected} setSelected={setSelected} />
+      }
       <FeaturesTabContents data={data[selected]} />
     </>
   );

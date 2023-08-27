@@ -28,7 +28,7 @@
     justify-content: center;
     gap: 36px;
 
-      .selected-title {
+    .selected-title {
       color: colors.$grayscale01;
       font-family: typo.$notosans;
       font-size: 32px;
@@ -37,7 +37,7 @@
       line-height: normal;
       text-align: left;
    
-    @media screen and (theme.$mobileSize){
+      @media screen and (theme.$mobileSize){
         margin-top: 10px;
       }
     }
