@@ -55,8 +55,10 @@ const PLAN_DATA_LIST = [
     buttonTitle: "구독하기",
     buttonDesign: "filled",
     buttonLink: () => {
-      // TODO: 모달 팝업 핸들러 함수 적용
-      alert("test");
+      window.SITE.openModalMenu(
+        "m20230626f81957238baca",
+        "m202208314139bd26c9a3e",
+      );
     },
     featuresTitle: "Personal 제공 기능 +",
     features: [
