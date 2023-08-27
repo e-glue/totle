@@ -10,289 +10,573 @@
 .title {
   color: colors.$primary;
   font-family: typo.$poppins;
-  font-size: 60px;
   font-weight: 800;
   text-align: center;
+
+  @media screen and (theme.$desktopSize) {
+    font-size: 60px;
+  }
+  @media screen and (theme.$tabletSize) {
+    font-size: 60px;
+  }
+  @media screen and (theme.$mobileSize) {
+    font-size: 40px;
+  }
+}
+
+.faq-desktop {
+  @media screen and (theme.$desktopSize) {
+    display: block;
+  }
+  @media screen and (theme.$tabletSize) {
+    display: none;
+  }
+  @media screen and (theme.$mobileSize) {
+    display: none;
+  }
+}
+
+.faq-tablet {
+  @media screen and (theme.$desktopSize) {
+    display: none;
+  }
+  @media screen and (theme.$tabletSize) {
+    display: block;
+    background: colors.$white;
+  }
+  @media screen and (theme.$mobileSize) {
+    display: block;
+    background: colors.$white;
+  }
+  padding-bottom: 71px;
+
+  .faq-title {
+    color: colors.$primary;
+    text-align: center;
+    font-family: typo.$notosans;
+    font-size: 36px;
+    font-weight: 700;
+
+    padding-top: 75px;
+    padding-bottom: 28px;
+  }
+
+  .faq {
+    .faq-box {
+      width: 466px;
+      height: 62px;
+      border-radius: 7px;
+      border: 1.5px solid colors.$border01;
+      background: colors.$white;
+
+      margin: 0 auto;
+
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+
+      .faq-content {
+        color: colors.$grayscale03;
+        font-family: typo.$notosans;
+        font-size: 24px;
+        font-weight: 400;
+
+        padding-left: 23px;
+        padding-top: 14px;
+      }
+
+      .faq-detail {
+        padding-right: 16px;
+        padding-top: 13px;
+      }
+    }
+  }
+
+  .other-faq {
+    padding-top: 10px;
+    width: 466px;
+    margin: 0 auto;
+    text-align: right;
+  }
 }
 
 .qna-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 72px;
+  @media screen and (theme.$desktopSize) {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 72px;
+  }
+}
 
-  .column {
+.column {
+  @media screen and (theme.$desktopSize) {
     display: flex;
     flex-direction: column;
+  }
 
-    .any-q-container {
-      .any-q-title {
-        color: #000;
-        font-family: Noto Sans KR;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
-        // text-align: center;
+  .any-q-container {
+    .any-q-title {
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      font-weight: 900;
 
+      @media screen and (theme.$desktopSize) {
         padding-left: 170px;
         padding-top: 85px;
+        font-size: 48px;
       }
-      .any-q-title-txt {
-        color: #575d5e;
-        font-family: Noto Sans KR;
-        font-size: 28px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        // text-align: center;
-
-        padding-left: 172px;
-        padding-top: 19px;
+      @media screen and (theme.$tabletSize) {
+        text-align: center;
+        font-size: 43px;
+        padding-top: 50px;
+      }
+      @media screen and (theme.$mobileSize) {
+        text-align: center;
+        font-size: 36px;
+        padding-top: 30px;
       }
     }
+    .any-q-title-txt {
+      color: colors.$grayscale05;
+      font-family: typo.$notosans;
+      font-weight: 500;
 
-    .faq-container {
-      order: 2;
-
-      .faq-title {
-        color: #006bff;
+      @media screen and (theme.$desktopSize) {
+        padding-left: 172px;
+        padding-top: 19px;
+        font-size: 28px;
+      }
+      @media screen and (theme.$tabletSize) {
         text-align: center;
-        font-family: Noto Sans KR;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-
-        padding-top: 78px;
-        padding-bottom: 28px;
-        padding-left: 246px;
+        padding-top: 17px;
+        font-size: 26px;
       }
-
-      .faq {
-        padding-left: 182px;
-
-        .faq-box {
-          width: 466px;
-          height: 62px;
-          border-radius: 7px;
-          border: 1.5px solid #d0d7e7;
-          background: #fff;
-
-          display: flex;
-          justify-content: space-between;
-          margin-bottom: 12px;
-
-          .faq-content {
-            color: #333;
-            font-family: Noto Sans KR;
-            font-size: 24px;
-            font-weight: 400;
-
-            padding-left: 23px;
-            padding-top: 14px;
-          }
-
-          .faq-detail {
-            padding-right: 16px;
-            padding-top: 13px;
-          }
-        }
-      }
-
-      .other-faq {
-        padding-top: 10px;
-        padding-left: 473px;
+      @media screen and (theme.$mobileSize) {
+        text-align: center;
+        padding-top: 15px;
+        font-size: 24px;
       }
     }
   }
 
-  .row {
-    padding-right: 104px;
-    padding-top: 56px;
+  .faq-container {
+    text-align: center;
 
-    .q-container {
-      width: 616px;
-      height: 937px;
-      flex-shrink: 0;
-      border-radius: 19px;
-      border: 1px solid #d9d9d9;
-      background: #fff;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    .faq-title {
+      color: colors.$primary;
+      text-align: center;
+      font-family: typo.$notosans;
+      font-size: 36px;
+      font-weight: 700;
 
-      .q-title {
-        color: #000;
-        font-family: Noto Sans KR;
-        font-size: 36px;
-        font-style: normal;
-        font-weight: 900;
-        line-height: normal;
+      padding-top: 78px;
+      padding-bottom: 28px;
 
-        text-align: center;
+      @media screen and (theme.$desktopSize) {
+        padding-left: 76px;
+      }
+      @media screen and (theme.$tabletSize) {
+        display: flex;
+        align-items: center;
+      }
+      @media screen and (theme.$mobileSize) {
+        display: flex;
+        align-items: center;
+      }
+    }
 
-        padding-top: 43px;
+    .faq {
+      @media screen and (theme.$desktopSize) {
+        padding-left: 182px;
+      }
+      @media screen and (theme.$tabletSize) {
+      }
+      @media screen and (theme.$mobileSize) {
       }
 
-      .q-title-txt {
-        color: #6c6c6c;
-        text-align: center;
-        font-family: Noto Sans KR;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+      .faq-box {
+        width: 466px;
+        height: 62px;
+        border-radius: 7px;
+        border: 1.5px solid colors.$border01;
+        background: colors.$white;
 
-        text-align: center;
-        padding-top: 9px;
-      }
-
-      .id {
         display: flex;
         justify-content: space-between;
+        margin-bottom: 12px;
 
-        .id-title {
-          color: #6c6c6c;
-          font-family: Noto Sans KR;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          padding-top: 30px;
-          padding-left: 47px;
-          padding-bottom: 8px;
-
-          .star {
-            color: #ff0202;
-            font-family: Noto Sans KR;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-          }
-        }
-
-        .required {
-          color: #ff0202;
-          font-family: Noto Sans KR;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          padding-top: 34px;
-          padding-right: 42px;
-        }
-      }
-
-      .inputs {
-        padding-left: 43px;
-
-        .input-info {
-          width: 537px;
-          height: 60px;
-          border-radius: 9px;
-          border: 1px solid #d9d9d9;
-          background: #fff;
+        .faq-content {
+          color: colors.$grayscale03;
+          font-family: typo.$notosans;
+          font-size: 24px;
+          font-weight: 400;
 
           padding-left: 23px;
           padding-top: 14px;
-          padding-bottom: 14px;
-
-          &::placeholder {
-            color: #d9d9d9;
-            font-family: Noto Sans KR;
-            font-size: 22px;
-            font-style: normal;
-            font-weight: 500;
-          }
         }
 
-        .tell {
-          color: #6c6c6c;
-          font-family: Noto Sans KR;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          padding-top: 21px;
-          padding-left: 47px;
-          padding-bottom: 8px;
+        .faq-detail {
+          padding-right: 16px;
+          padding-top: 13px;
         }
       }
+    }
 
-      .q-contents {
-        display: flex;
-        justify-content: space-between;
+    .other-faq {
+      padding-top: 10px;
 
-        .q-contents-title {
-          color: #6c6c6c;
-          font-family: Noto Sans KR;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          padding-top: 26px;
-          padding-left: 46px;
-          padding-bottom: 15px;
-        }
-
-        .star {
-          color: #ff0202;
-          font-family: Noto Sans KR;
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-        }
-        .required {
-          color: #ff0202;
-          font-family: Noto Sans KR;
-          font-size: 16px;
-          font-style: normal;
-          font-weight: 500;
-          line-height: normal;
-
-          padding-right: 41px;
-          padding-top: 30px;
-        }
+      @media screen and (theme.$desktopSize) {
+        padding-left: 467px;
       }
-
-      .input-q {
-        width: 537px;
-        height: 125px;
-        border-radius: 9px;
-        border: 1px solid #d9d9d9;
-        background: #fff;
-
-        margin-left: 42px;
+      @media screen and (theme.$tabletSize) {
       }
-
-      .error-file-upload {
-        color: #6c6c6c;
-        font-family: Noto Sans KR;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-        padding-top: 26px;
-        padding-left: 46px;
-      }
-
-      .agree {
-        color: #6c6c6c;
-        font-family: Noto Sans KR;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-
-        padding-top: 12px;
-        padding-left: 43px;
+      @media screen and (theme.$mobileSize) {
       }
     }
   }
+}
+
+.q-container {
+  border-radius: 19px;
+  border: 1px solid colors.$border03;
+  background: colors.$white;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+
+  @media screen and (theme.$desktopSize) {
+    width: 616px;
+    padding-bottom: 54px;
+    margin-right: 104px;
+    margin-top: 56px;
+  }
+  @media screen and (theme.$tabletSize) {
+    width: 570px;
+    padding-bottom: 50px;
+
+    margin: 0 auto;
+
+    margin-top: 40px;
+    margin-bottom: 49.6px;
+  }
+  @media screen and (theme.$mobileSize) {
+    width: 540px;
+    padding-bottom: 47.34px;
+
+    margin: 0 auto;
+
+    margin-top: 30px;
+    margin-bottom: 39.6px;
+  }
+
+  .q-title {
+    color: colors.$grayscale01;
+    font-family: typo.$notosans;
+
+    font-weight: 900;
+
+    text-align: center;
+
+    padding-top: 43px;
+
+    @media screen and (theme.$desktopSize) {
+      font-size: 36px;
+    }
+    @media screen and (theme.$tabletSize) {
+      font-size: 32px;
+    }
+    @media screen and (theme.$mobileSize) {
+      font-size: 28px;
+    }
+  }
+
+  .q-title-txt {
+    color: colors.$grayscale07;
+    text-align: center;
+    font-family: typo.$notosans;
+    font-weight: 500;
+
+    text-align: center;
+    padding-top: 9px;
+
+    @media screen and (theme.$desktopSize) {
+      font-size: 20px;
+    }
+    @media screen and (theme.$tabletSize) {
+      font-size: 18px;
+    }
+    @media screen and (theme.$mobileSize) {
+      font-size: 16px;
+    }
+  }
+
+  .id {
+    display: flex;
+    justify-content: space-between;
+
+    .id-title {
+      color: colors.$grayscale07;
+      font-family: typo.$notosans;
+
+      font-weight: 500;
+
+      padding-top: 30px;
+      padding-bottom: 8px;
+
+      @media screen and (theme.$desktopSize) {
+        font-size: 22px;
+      }
+      @media screen and (theme.$tabletSize) {
+        font-size: 20px;
+      }
+      @media screen and (theme.$mobileSize) {
+        font-size: 18px;
+      }
+
+      .star {
+        color: #ff0202;
+        font-family: typo.$notosans;
+        font-weight: 500;
+      }
+    }
+
+    .required {
+      color: #ff0202;
+      font-family: typo.$notosans;
+
+      font-weight: 500;
+
+      padding-top: 34px;
+
+      @media screen and (theme.$desktopSize) {
+        font-size: 16px;
+      }
+      @media screen and (theme.$tabletSize) {
+        font-size: 14px;
+      }
+      @media screen and (theme.$mobileSize) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .input-info {
+    border-radius: 9px;
+    border: 1px solid colors.$border03;
+    background: colors.$white;
+
+    @media screen and (theme.$desktopSize) {
+      width: 537px;
+      height: 60px;
+      padding-left: 24px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    @media screen and (theme.$tabletSize) {
+      width: 500px;
+      height: 66px;
+      padding-left: 23px;
+      padding-top: 13px;
+      padding-bottom: 13px;
+    }
+    @media screen and (theme.$mobileSize) {
+      width: 470.747px;
+      height: 52.597px;
+      padding-left: 21.04px;
+      padding-top: 12.27px;
+      padding-bottom: 12.27px;
+    }
+
+    &::placeholder {
+      color: colors.$border03;
+      font-family: typo.$notosans;
+
+      font-weight: 500;
+
+      @media screen and (theme.$desktopSize) {
+        font-size: 22px;
+      }
+      @media screen and (theme.$tabletSize) {
+        font-size: 20px;
+      }
+      @media screen and (theme.$mobileSize) {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .tell {
+    color: colors.$grayscale07;
+    font-family: typo.$notosans;
+    font-weight: 500;
+
+    padding-top: 21px;
+    padding-bottom: 8px;
+
+    @media screen and (theme.$desktopSize) {
+      font-size: 22px;
+    }
+    @media screen and (theme.$tabletSize) {
+      font-size: 20px;
+    }
+    @media screen and (theme.$mobileSize) {
+      font-size: 18px;
+    }
+  }
+
+  .q-contents {
+    display: flex;
+    justify-content: space-between;
+
+    .q-contents-title {
+      color: colors.$grayscale07;
+      font-family: typo.$notosans;
+      font-weight: 500;
+
+      padding-top: 26px;
+      padding-bottom: 15px;
+
+      @media screen and (theme.$desktopSize) {
+        font-size: 22px;
+      }
+      @media screen and (theme.$tabletSize) {
+        font-size: 20px;
+      }
+      @media screen and (theme.$mobileSize) {
+        font-size: 18px;
+      }
+    }
+
+    .star {
+      color: #ff0202;
+      font-family: typo.$notosans;
+      font-weight: 500;
+    }
+    .required {
+      color: #ff0202;
+      font-family: typo.$notosans;
+      font-weight: 500;
+
+      padding-top: 30px;
+
+      @media screen and (theme.$desktopSize) {
+        font-size: 16px;
+      }
+      @media screen and (theme.$tabletSize) {
+        font-size: 14px;
+      }
+      @media screen and (theme.$mobileSize) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .input-q {
+    border-radius: 9px;
+    border: 1px solid colors.$border03;
+    background: colors.$white;
+
+    @media screen and (theme.$desktopSize) {
+      width: 537px;
+      height: 125px;
+    }
+    @media screen and (theme.$tabletSize) {
+      width: 500px;
+      height: 110px;
+    }
+    @media screen and (theme.$mobileSize) {
+      width: 470.747px;
+      height: 109.578px;
+    }
+  }
+
+  .error-file-upload {
+    color: colors.$grayscale07;
+    font-family: typo.$notosans;
+    font-weight: 500;
+
+    @media screen and (theme.$desktopSize) {
+      font-size: 22px;
+      padding-top: 26px;
+    }
+    @media screen and (theme.$tabletSize) {
+      font-size: 20px;
+      padding-top: 24px;
+    }
+    @media screen and (theme.$mobileSize) {
+      font-size: 18px;
+      padding-top: 22.79px;
+    }
+  }
+
+  .agree {
+    color: colors.$grayscale07;
+    font-family: typo.$notosans;
+
+    font-weight: 500;
+
+    @media screen and (theme.$desktopSize) {
+      font-size: 14px;
+      padding-top: 12px;
+    }
+    @media screen and (theme.$tabletSize) {
+      font-size: 13px;
+      padding-top: 11px;
+    }
+    @media screen and (theme.$mobileSize) {
+      font-size: 12px;
+      padding-top: 10.52px;
+    }
+  }
+}
+
+.btn-upload {
+  font-family: typo.$notosans;
+  cursor: pointer;
+  width: 100%;
+  height: 73px;
+  border-radius: 9px;
+  background: colors.$primary;
+  color: colors.$white;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+
+  margin-top: 17px;
+  margin-bottom: 21px;
+  padding-top: 20px;
+}
+
+#file {
+  display: none;
+}
+
+.detail-button {
+  width: 104px;
+  height: 37px;
+  border-radius: 18.5px;
+  background: colors.$bg03;
+  color: colors.$primary;
+  font-family: typo.$notosans;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+
+  cursor: pointer;
+}
+
+.faq-button {
+  width: 175px;
+  height: 45px;
+  border-radius: 7px;
+  border: 1.5px solid colors.$border01;
+  background: colors.$bg03;
+  color: colors.$primary;
+  text-align: center;
+  font-family: typo.$notosans;
+  font-size: 17px;
+  font-weight: 700;
+
+  cursor: pointer;
 }

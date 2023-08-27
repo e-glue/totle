@@ -1,5 +1,5 @@
 import "./navBar.scss";
-import logo from "../../../assets/common/toddle_logo.png";
+import logo from "../../../../assets/common/toddle_logo.png";
 
 const NavBar = () => {
   return (
