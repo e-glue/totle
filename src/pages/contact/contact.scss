@@ -3,8 +3,16 @@
 @use "../../styles/theme";
 
 .contact-container {
-  padding: 64px 0;
   background-color: colors.$bg03;
+  @media screen and (theme.$desktopSize) {
+    padding: 64px 0;
+  }
+  @media screen and (theme.$tabletSize) {
+    padding-top: 64px;
+  }
+  @media screen and (theme.$mobileSize) {
+    padding-top: 64px;
+  }
 }
 
 .title {
@@ -503,6 +511,14 @@
       font-size: 18px;
       padding-top: 22.79px;
     }
+  }
+
+  .file-name {
+    color: colors.$grayscale07;
+    font-family: typo.$notosans;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 24px;
   }
 
   .agree {
