@@ -2,50 +2,53 @@
 @use "../../../../styles/typo";
 @use "../../../../styles/theme";
 
-// customer section
-.customer-wrapper {
-  padding: 105px 0 42px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 
-  .customer-text {
-    padding-bottom: 52px;
-    text-align: center;
-    color: colors.$grayscale01;
-    font-family: typo.$notosans;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+#introduction-root {
+  // customer section
+  .customer-wrapper {
+    padding: 105px 0 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
-    .t1 {
-      color: colors.$primary;
-      font-weight: 700;
-    }
+    .customer-text {
+      padding-bottom: 52px;
+      text-align: center;
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
 
-    .t2 {
-      font-weight: 700;
+      .t1 {
+        color: colors.$primary;
+        font-weight: 700;
+      }
+
+      .t2 {
+        font-weight: 700;
+      }
     }
   }
-}
 
-// customer section 타블렛 
-@media screen and (theme.$tabletSize) { 
-  .customer-wrapper {
-    .customer-text {
-      font-size: 20px;
-    }  
+  // customer section 타블렛 
+  @media screen and (theme.$tabletSize) { 
+    .customer-wrapper {
+      .customer-text {
+        font-size: 20px;
+      }  
+    }
   }
-}
 
-// customer section 모바일
-@media screen and (theme.$mobileSize) { 
-  .customer-wrapper {
-    padding: 40px 0 42px;
-    .customer-text {
-      font-size: 20px;
-    }  
+  // customer section 모바일
+  @media screen and (theme.$mobileSize) { 
+    .customer-wrapper {
+      padding: 40px 0 42px;
+      .customer-text {
+        font-size: 20px;
+      }  
+    }
   }
 }

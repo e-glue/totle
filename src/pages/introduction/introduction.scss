@@ -3,9 +3,13 @@
 @use "../../styles/theme";
 
 
-.width {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#introduction-root {
+  .width {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
+
+

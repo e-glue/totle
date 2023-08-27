@@ -1,64 +1,68 @@
 @use "../../../../styles/theme";
 
-.banner-list {
-  width: 854px;
-  height: 67px;
-  overflow: hidden;
-  display: flex;
-
-  ul {
-    display: flex;
-    flex-wrap: nowrap;
-    
-    li {
-      list-style: none;
-      cursor: pointer;
-    } 
-  }
-}
-
-.banner-item {
-  display: flex;
-  overflow: hidden;
-  
-  &.original {
-    animation: 30s linear infinite infiniteAnimation1;
-  }
-
-  &.clone {
-    animation: 30s linear infinite infiniteAnimation2;
-  }
-}
-
-@media screen and (theme.$mobileSize) { 
+#introduction-root {
   .banner-list {
-    width: 430px;
+    width: 854px;
+    height: 67px;
+    overflow: hidden;
+    display: flex;
+  
+    ul {
+      display: flex;
+      flex-wrap: nowrap;
+      
+      li {
+        list-style: none;
+        cursor: pointer;
+      } 
+    }
+  }
+  
+  .banner-item {
+    display: flex;
+    overflow: hidden;
+    
+    &.original {
+      animation: 30s linear infinite infiniteAnimation1;
+    }
+  
+    &.clone {
+      animation: 30s linear infinite infiniteAnimation2;
+    }
+  }
+  
+  @media screen and (theme.$mobileSize) { 
+    .banner-list {
+      width: 430px;
+    }
+  }
+  
+  @keyframes infiniteAnimation1 {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    50.01% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+  }
+  
+  @keyframes infiniteAnimation2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
   }
 }
 
-@keyframes infiniteAnimation1 {
-  0% {
-      transform: translateX(0%);
-  }
-  50% {
-      transform: translateX(-100%);
-  }
-  50.01% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(0%);
-  }
-}
 
-@keyframes infiniteAnimation2 {
-  0% {
-      transform: translateX(0%);
-  }
-  100% {
-      transform: translateX(-200%);
-  }
-}
 
 
 
