@@ -137,7 +137,7 @@ const Contact = () => {
                 오류 시 생성되는 오류 로그 파일을 첨부해주세요.
               </div>
               <label for="file">
-                <div class="btn-upload">파일 업로드하기</div>
+                <div class="btn-upload">파일 업로드</div>
               </label>
               <input type="file" name="file" id="file"></input>
               <Button className="contact-button">제출하기</Button>
