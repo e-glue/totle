@@ -15,11 +15,15 @@ const SectionTop = () => {
           </span>
         </div>
         <div className="email-table">
-          <input
-            className="email-input"
-            placeholder="이메일 주소를 입력해주세요."
-          ></input>
-          <button className="email-button">계정 생성하기</button>
+          <div className="form-wrapper">
+            <form id="addFormw202303277633fa032962e" method="POST">
+              <input
+                className="email-input"
+                placeholder="이메일 주소를 입력해주세요."
+              ></input>
+              <button className="email-button">계정 생성하기</button>
+            </form>
+          </div>
           <p className="email-text">
             무료 계정을 생성해 토틀의 다양한 기능을 활용해보세요!
           </p>
