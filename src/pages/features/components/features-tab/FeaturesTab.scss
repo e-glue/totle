@@ -13,23 +13,18 @@
   background: colors.$white;
   height: 66px;
   border-radius: 12px;
-  text-align: center;
-  text-align: left;
   word-break: keep-all;
-  margin-top: 30px;
 
   .button {
     flex-direction: row;
     color: colors.$secondary;
     text-align: center;
-    align-items: center;
     font-family: typo.$notosans;
     font-size: 18px;
     font-weight: 700;
     padding: 14px 24px;
     border-radius: 8px;
     cursor: pointer;
-    margin: 0 auto;
 
     &.selected {
       background-color: colors.$bg01;
