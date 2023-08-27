@@ -1,6 +1,5 @@
 @use "../../../../styles/colors";
 @use "../../../../styles/typo";
-@use "../../../../styles/theme";
 
 .title-group {
   display: grid;
@@ -16,6 +15,7 @@
     line-height: normal;
     margin-top: 80px;
   }
+
   .kor-title {
     color: colors.$grayscale01;
     font-size: 30px;

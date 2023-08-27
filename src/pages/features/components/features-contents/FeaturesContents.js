@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import FeaturesTabContents from "../features-tab-contents/FeaturesTabContents";
 import FeaturesTab from "../features-tab/FeaturesTab";
-import "./FeaturesContents.scss";
 import Dropdown from "../dropdown/Dropdown";
 
 const FeaturesContents = ({data, dataOrderList}) => {
