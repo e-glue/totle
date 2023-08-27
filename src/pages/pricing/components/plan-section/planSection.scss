@@ -44,18 +44,3 @@
     flex-direction: column;
   }
 }
-
-// <section className="pricing-container color-bg">
-//         <div className="wrap-container width-1304">
-//           <SectionTitle />
-
-//           <article>
-//             <div className="toggle-wrapper">
-//               <PricingToggle onChange={onChangeToggleHandler} />
-//               <p className="toggle-guide">(연간 결제 시 20% 할인)</p>
-//             </div>
-//             <PlanBoxGroup isToggle={isToggle} />
-//             <PlanGuideText />
-//           </article>
-//         </div>
-//       </section>

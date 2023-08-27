@@ -1,0 +1,14 @@
+@use "../../styles/colors";
+@use "../../styles/typo";
+@use "../../styles/theme";
+
+.features-container {
+  min-height: 100vh;
+  margin: auto;
+  
+  &.bg {
+    background: colors.$bg02;
+  }
+}
+
+
