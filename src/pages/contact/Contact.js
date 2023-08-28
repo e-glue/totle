@@ -1,6 +1,5 @@
 import { useRef, useEffect, useCallback, useState } from "react";
 import "./contact.scss";
-import NavBar from "./components/nav-bar/NavBar";
 import Button from "./components/button/Button";
 
 const Contact = () => {
@@ -24,7 +23,6 @@ const Contact = () => {
 
   return (
     <>
-      <NavBar />
       <div className="contact-container">
         <h1 className="title">How can we help?</h1>
         <div className="qna-container">
