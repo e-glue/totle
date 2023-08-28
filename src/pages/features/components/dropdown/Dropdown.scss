@@ -1,34 +1,36 @@
 @use "../../../../styles/colors";
 @use "../../../../styles/typo";
 
-.dropdown-container {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  border: 1px solid colors.$border02;
-  background: colors.$white;
-  width: 469px;
-  height: 66px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-.featuresSelect {
-  display: flex;
-  width: 453px;
-  height: 47px;
-  justify-content: center;
-  align-items: center;
-  color: colors.$primary;
-  background-color: colors.$bg01;
-  text-align: center;
-  font-family: typo.$notosans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  border: 1.5px solid colors.$bg01;
-  border-radius: 7px;
+#features-root{
+  .dropdown-container {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 1px solid colors.$border02;
+    background: colors.$white;
+    width: 469px;
+    height: 66px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  
+  .featuresSelect {
+    display: flex;
+    width: 453px;
+    height: 47px;
+    justify-content: center;
+    align-items: center;
+    color: colors.$primary;
+    background-color: colors.$bg01;
+    text-align: center;
+    font-family: typo.$notosans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1.5px solid colors.$bg01;
+    border-radius: 7px;
+  }
 }
