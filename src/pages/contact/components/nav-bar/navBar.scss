@@ -1,15 +1,17 @@
 @use "../../../../styles/colors";
 
-.nav-bar {
-  height: 110px;
-  padding-left: 48px;
-  padding-top: 31px;
-  background: colors.$white;
-  // display: flex;
-  align-items: center;
-}
+#contact-root {
+  .nav-bar {
+    height: 110px;
+    padding-left: 48px;
+    padding-top: 31px;
+    background: colors.$white;
+    // display: flex;
+    align-items: center;
+  }
 
-.logo {
-  width: 150px;
-  height: 53px;
+  .logo {
+    width: 150px;
+    height: 53px;
+  }
 }

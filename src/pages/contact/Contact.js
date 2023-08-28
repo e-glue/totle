@@ -153,7 +153,7 @@ const Contact = () => {
               <div className="error-file-upload">
                 오류 시 생성되는 오류 로그 파일을 첨부해주세요.
               </div>
-              <label for="file">
+              <label className="label-upload" for="file">
                 <div className="btn-upload">파일 업로드</div>
               </label>
               <input type="file" name="file" id="file" ref={inputEl}></input>
