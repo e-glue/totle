@@ -2,37 +2,39 @@
 @use "../../../../styles/typo";
 @use "../../../../styles/theme";
 
-.title-group {
-  .title {
-    color: colors.$grayscale01;
-    font-family: typo.$notosans;
-    text-align: center;
-    font-size: 48px;
-    font-weight: 700;
-    margin-bottom: 16px;
-  }
-
-  .sub-title {
-    color: colors.$grayscale05;
-    font-family: typo.$notosans;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 400;
-    word-break: keep-all;
-
-    em {
-      color: colors.$primary;
+#pricing-root {
+  .title-group {
+    .title {
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      text-align: center;
+      font-size: 48px;
       font-weight: 700;
+      margin-bottom: 16px;
     }
-  }
 
-  @media screen and (theme.$desktopSize) {
-    margin-bottom: 97px;
-  }
-  @media screen and (theme.$tabletSize) {
-    margin-bottom: 52px;
-  }
-  @media screen and (theme.$mobileSize) {
-    margin-bottom: 52px;
+    .sub-title {
+      color: colors.$grayscale05;
+      font-family: typo.$notosans;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 400;
+      word-break: keep-all;
+
+      em {
+        color: colors.$primary;
+        font-weight: 700;
+      }
+    }
+
+    @media screen and (theme.$desktopSize) {
+      margin-bottom: 97px;
+    }
+    @media screen and (theme.$tabletSize) {
+      margin-bottom: 52px;
+    }
+    @media screen and (theme.$mobileSize) {
+      margin-bottom: 52px;
+    }
   }
 }

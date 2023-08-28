@@ -2,28 +2,30 @@
 @use "../../../../styles/typo";
 @use "../../../../styles/theme";
 
-.pricing-container {
-  padding: 100px 0;
+#pricing-root {
+  .pricing-container {
+    padding: 100px 0;
 
-  &.color-bg {
-    background-color: colors.$bg03;
+    &.color-bg {
+      background-color: colors.$bg03;
+    }
   }
-}
 
-.width-1130 {
-  max-width: 1130px;
-}
-
-// * comparison table
-.compare-wrapper {
-  @media screen and (theme.$tabletSize) {
-    display: none;
+  .width-1130 {
+    max-width: 1130px;
   }
-  @media screen and (theme.$mobileSize) {
-    display: none;
-  }
-}
 
-.table-wrapper {
-  padding-bottom: 60px;
+  // * comparison table
+  .compare-wrapper {
+    @media screen and (theme.$tabletSize) {
+      display: none;
+    }
+    @media screen and (theme.$mobileSize) {
+      display: none;
+    }
+  }
+
+  .table-wrapper {
+    padding-bottom: 60px;
+  }
 }

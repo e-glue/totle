@@ -2,45 +2,47 @@
 @use "../../../../styles/typo";
 @use "../../../../styles/theme";
 
-// * layout
-.pricing-container {
-  padding: 100px 0;
+#pricing-root {
+  // * layout
+  .pricing-container {
+    padding: 100px 0;
 
-  &.color-bg {
-    background-color: colors.$bg03;
-  }
-}
-
-.width-1304 {
-  max-width: 1304px;
-}
-
-// * toggle position
-.toggle-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-
-  margin-bottom: 44px;
-
-  .toggle-guide {
-    text-align: center;
-    color: colors.$primary;
-    font-family: typo.$notosans;
-    font-size: 16px;
-    font-weight: 700;
+    &.color-bg {
+      background-color: colors.$bg03;
+    }
   }
 
-  @media screen and (theme.$desktopSize) {
+  .width-1304 {
+    max-width: 1304px;
+  }
+
+  // * toggle position
+  .toggle-wrapper {
+    display: flex;
     flex-direction: row;
-    padding-left: 194px;
-  }
-  @media screen and (theme.$tabletSize) {
-    flex-direction: column;
-  }
-  @media screen and (theme.$mobileSize) {
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    margin-bottom: 44px;
+
+    .toggle-guide {
+      text-align: center;
+      color: colors.$primary;
+      font-family: typo.$notosans;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    @media screen and (theme.$desktopSize) {
+      flex-direction: row;
+      padding-left: 194px;
+    }
+    @media screen and (theme.$tabletSize) {
+      flex-direction: column;
+    }
+    @media screen and (theme.$mobileSize) {
+      flex-direction: column;
+    }
   }
 }

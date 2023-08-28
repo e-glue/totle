@@ -1,14 +1,16 @@
 @use "../../../../styles/colors";
 
-.nav-bar {
-  height: 127px;
-  padding: 38px;
-  background: colors.$white;
-  display: flex;
-  align-items: center;
-}
+#pricing-root {
+  .nav-bar {
+    height: 127px;
+    padding: 38px;
+    background: colors.$white;
+    display: flex;
+    align-items: center;
+  }
 
-.logo {
-  width: 150px;
-  height: 53px;
+  .logo {
+    width: 150px;
+    height: 53px;
+  }
 }

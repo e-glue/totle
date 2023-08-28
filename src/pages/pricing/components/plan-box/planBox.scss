@@ -2,123 +2,125 @@
 @use "../../../../styles/typo";
 @use "../../../../styles/theme";
 
-.plan-box {
-  flex-grow: 1;
-  padding: 20px;
-  border-radius: 15px;
-  border: 1px solid colors.$primary;
-  background: colors.$white;
+#pricing-root {
+  .plan-box {
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid colors.$primary;
+    background: colors.$white;
 
-  @media screen and (theme.$desktopSize) {
-    max-width: 308px;
-    min-width: 220px;
-    min-height: 653px;
-  }
-  @media screen and (theme.$tabletSize) {
-    width: 100%;
-  }
-  @media screen and (theme.$mobileSize) {
-    width: 100%;
-    min-width: 320px;
-  }
-}
-
-.plan-title-group {
-  text-align: center;
-  margin: 24px 0 40px;
-
-  .plan-title-en {
-    color: colors.$grayscale01;
-    font-family: typo.$poppins;
-    font-size: 36px;
-    font-weight: 700;
-  }
-  .plan-title-kr {
-    color: colors.$primary;
-    font-family: typo.$notosans;
-    font-size: 20px;
-    font-weight: 800;
-  }
-}
-
-.plan-price {
-  text-align: center;
-  font-family: typo.$notosans;
-  margin-bottom: 16px;
-  font-weight: 700;
-  color: colors.$grayscale07;
-
-  .person {
-    font-size: 16px;
-    font-style: normal;
-    line-height: normal;
-  }
-  .by-period {
-    color: colors.$grayscale02;
-    font-size: 20px;
-    margin-bottom: 8px;
-
-    span {
-      font-size: 40px;
-      letter-spacing: -2px;
+    @media screen and (theme.$desktopSize) {
+      max-width: 308px;
+      min-width: 220px;
+      min-height: 653px;
+    }
+    @media screen and (theme.$tabletSize) {
+      width: 100%;
+    }
+    @media screen and (theme.$mobileSize) {
+      width: 100%;
+      min-width: 320px;
     }
   }
 
-  .by-period-month {
-    font-size: 14px;
-    height: 14px;
+  .plan-title-group {
+    text-align: center;
+    margin: 24px 0 40px;
+
+    .plan-title-en {
+      color: colors.$grayscale01;
+      font-family: typo.$poppins;
+      font-size: 36px;
+      font-weight: 700;
+    }
+    .plan-title-kr {
+      color: colors.$primary;
+      font-family: typo.$notosans;
+      font-size: 20px;
+      font-weight: 800;
+    }
   }
-}
 
-.plan-feat-wrapper {
-  font-family: typo.$notosans;
-  margin-top: 48px;
-  padding: 0 12px;
-
-  .plan-feat-title {
-    color: colors.$grayscale05;
-    font-size: 16px;
-    font-weight: 700;
+  .plan-price {
+    text-align: center;
+    font-family: typo.$notosans;
     margin-bottom: 16px;
-  }
+    font-weight: 700;
+    color: colors.$grayscale07;
 
-  .plan-feat {
-    li {
-      color: colors.$grayscale07;
-      font-size: 14px;
-      font-weight: 400;
-      display: flex;
-      flex-wrap: wrap;
-      margin: 8px 0;
+    .person {
+      font-size: 16px;
+      font-style: normal;
+      line-height: normal;
+    }
+    .by-period {
+      color: colors.$grayscale02;
+      font-size: 20px;
+      margin-bottom: 8px;
 
-      em {
-        color: colors.$primary;
-        display: block;
+      span {
+        font-size: 40px;
+        letter-spacing: -2px;
       }
     }
 
-    li:before {
-      content: "";
-      display: inline-block;
-      top: 10px;
-      height: 17px;
-      width: 17px;
-      background-size: 17px;
-      background-image: url("../../../../assets/pricing/check_circle.png");
-      background-repeat: no-repeat;
-      margin-right: 7px;
-    }
-
-    .plan-small-text {
-      font-size: 11px;
-      margin-left: 24px;
+    .by-period-month {
+      font-size: 14px;
+      height: 14px;
     }
   }
 
-  @media screen and (theme.$tabletSize) {
-    display: none;
-  }
-  @media screen and (theme.$mobileSize) {
-    display: none;
+  .plan-feat-wrapper {
+    font-family: typo.$notosans;
+    margin-top: 48px;
+    padding: 0 12px;
+
+    .plan-feat-title {
+      color: colors.$grayscale05;
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .plan-feat {
+      li {
+        color: colors.$grayscale07;
+        font-size: 14px;
+        font-weight: 400;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 8px 0;
+
+        em {
+          color: colors.$primary;
+          display: block;
+        }
+      }
+
+      li:before {
+        content: "";
+        display: inline-block;
+        top: 10px;
+        height: 17px;
+        width: 17px;
+        background-size: 17px;
+        background-image: url("../../../../assets/pricing/check_circle.png");
+        background-repeat: no-repeat;
+        margin-right: 7px;
+      }
+
+      .plan-small-text {
+        font-size: 11px;
+        margin-left: 24px;
+      }
+    }
+
+    @media screen and (theme.$tabletSize) {
+      display: none;
+    }
+    @media screen and (theme.$mobileSize) {
+      display: none;
+    }
   }
 }

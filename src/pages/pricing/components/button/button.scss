@@ -1,34 +1,36 @@
 @use "../../../../styles/colors";
 @use "../../../../styles/typo";
 
-.rounded-button {
-  width: 100%;
-  border-radius: 30px;
-  font-family: typo.$notosans;
-  text-align: center;
-  font-weight: 700;
-  cursor: pointer;
+#pricing-root {
+  .rounded-button {
+    width: 100%;
+    border-radius: 30px;
+    font-family: typo.$notosans;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
 
-  &.lg {
-    padding: 16px;
-    height: 60px;
-    font-size: 20px;
-    line-height: 20px;
-  }
-  &.sm {
-    padding: 12px;
-    height: 40px;
-    font-size: 15px;
-    line-height: 10px;
-  }
-  &.lined {
-    border: 1.5px solid colors.$primary;
-    background: colors.$bg01;
-    color: colors.$primary;
-  }
-  &.filled {
-    border: none;
-    background: colors.$primary;
-    color: colors.$white;
+    &.lg {
+      padding: 16px;
+      height: 60px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+    &.sm {
+      padding: 12px;
+      height: 40px;
+      font-size: 15px;
+      line-height: 10px;
+    }
+    &.lined {
+      border: 1.5px solid colors.$primary;
+      background: colors.$bg01;
+      color: colors.$primary;
+    }
+    &.filled {
+      border: none;
+      background: colors.$primary;
+      color: colors.$white;
+    }
   }
 }
