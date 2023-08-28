@@ -1,9 +1,11 @@
 @use "../../styles/colors";
 @use "../../styles/typo";
+@use "../../styles/theme";
 
-.test {
-  font-family: typo.$notosans;
-  color: colors.$primary;
-  font-size: 64px;
-  font-weight: 700;
+
+.width {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
