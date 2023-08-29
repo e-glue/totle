@@ -2,15 +2,15 @@
 @use "../../styles/typo";
 @use "../../styles/theme";
 
+$desktopSize: "min-width: 1245px";
+$mobileSize: "max-width: 1244px";
+
 .contact-container {
   background-color: colors.$bg03;
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     padding: 64px 0;
   }
-  @media screen and (theme.$tabletSize) {
-    padding-top: 64px;
-  }
-  @media screen and (theme.$mobileSize) {
+  @media screen and ($mobileSize) {
     padding-top: 64px;
   }
 }
@@ -21,38 +21,28 @@
   font-weight: 800;
   text-align: center;
 
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     font-size: 60px;
   }
-  @media screen and (theme.$tabletSize) {
-    font-size: 60px;
-  }
-  @media screen and (theme.$mobileSize) {
+  @media screen and ($mobileSize) {
     font-size: 40px;
   }
 }
 
 .faq-desktop {
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     display: block;
   }
-  @media screen and (theme.$tabletSize) {
-    display: none;
-  }
-  @media screen and (theme.$mobileSize) {
+  @media screen and ($mobileSize) {
     display: none;
   }
 }
 
 .faq-tablet {
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     display: none;
   }
-  @media screen and (theme.$tabletSize) {
-    display: block;
-    background: colors.$white;
-  }
-  @media screen and (theme.$mobileSize) {
+  @media screen and ($mobileSize) {
     display: block;
     background: colors.$white;
   }
@@ -71,26 +61,25 @@
 
   .faq {
     .faq-box {
-      width: 466px;
       height: 62px;
       border-radius: 7px;
       border: 1.5px solid colors.$border01;
       background: colors.$white;
 
-      margin: 0 auto;
-
       display: flex;
       justify-content: space-between;
       margin-bottom: 12px;
+      margin-left: 50px;
+      margin-right: 50px;
 
       .faq-content {
         color: colors.$grayscale03;
         font-family: typo.$notosans;
-        font-size: 24px;
+        font-size: 19px;
         font-weight: 400;
 
         padding-left: 23px;
-        padding-top: 14px;
+        padding-top: 20px;
       }
 
       .faq-detail {
@@ -102,14 +91,14 @@
 
   .other-faq {
     padding-top: 10px;
-    width: 466px;
     margin: 0 auto;
     text-align: right;
+    margin-right: 50px;
   }
 }
 
 .qna-container {
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -118,7 +107,7 @@
 }
 
 .column {
-  @media screen and (theme.$desktopSize) {
+  @media screen and ($desktopSize) {
     display: flex;
     flex-direction: column;
   }
@@ -130,17 +119,12 @@
       font-weight: 900;
       padding-bottom: 15px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         padding-left: 170px;
         padding-top: 85px;
         font-size: 48px;
       }
-      @media screen and (theme.$tabletSize) {
-        text-align: center;
-        font-size: 43px;
-        padding-top: 50px;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         text-align: center;
         font-size: 36px;
         padding-top: 30px;
@@ -152,17 +136,12 @@
       font-weight: 500;
       line-height: normal;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         padding-left: 172px;
         padding-top: 19px;
         font-size: 28px;
       }
-      @media screen and (theme.$tabletSize) {
-        text-align: center;
-        padding-top: 17px;
-        font-size: 26px;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         text-align: center;
         padding-top: 15px;
         font-size: 24px;
@@ -183,21 +162,17 @@
       padding-top: 78px;
       padding-bottom: 28px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         padding-left: 160px;
       }
-      @media screen and (theme.$tabletSize) {
-        display: flex;
-        align-items: center;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         display: flex;
         align-items: center;
       }
     }
 
     .faq {
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         padding-left: 182px;
       }
 
@@ -232,12 +207,8 @@
     .other-faq {
       padding-top: 10px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         padding-left: 467px;
-      }
-      @media screen and (theme.$tabletSize) {
-      }
-      @media screen and (theme.$mobileSize) {
       }
     }
   }
@@ -250,29 +221,18 @@
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 40px;
 
-  @media screen and (theme.$desktopSize) {
-    width: 616px;
+  @media screen and ($desktopSize) {
+    // width: 100%;
     padding-bottom: 54px;
     margin-right: 104px;
     margin-top: 56px;
   }
-  @media screen and (theme.$tabletSize) {
-    width: 570px;
-    padding-bottom: 50px;
-
-    margin: 0 auto;
-
-    margin-top: 40px;
-    margin-bottom: 49.6px;
-  }
-  @media screen and (theme.$mobileSize) {
-    width: 540px;
+  @media screen and ($mobileSize) {
     padding-bottom: 47.34px;
-
-    margin: 0 auto;
-
     margin-top: 30px;
     margin-bottom: 39.6px;
+    margin-left: 50px;
+    margin-right: 44px;
   }
 
   .q-title {
@@ -285,13 +245,10 @@
 
     padding-top: 43px;
 
-    @media screen and (theme.$desktopSize) {
+    @media screen and ($desktopSize) {
       font-size: 36px;
     }
-    @media screen and (theme.$tabletSize) {
-      font-size: 32px;
-    }
-    @media screen and (theme.$mobileSize) {
+    @media screen and ($mobileSize) {
       font-size: 28px;
     }
   }
@@ -306,13 +263,10 @@
     text-align: center;
     padding-top: 9px;
 
-    @media screen and (theme.$desktopSize) {
+    @media screen and ($desktopSize) {
       font-size: 20px;
     }
-    @media screen and (theme.$tabletSize) {
-      font-size: 18px;
-    }
-    @media screen and (theme.$mobileSize) {
+    @media screen and ($mobileSize) {
       font-size: 16px;
     }
   }
@@ -330,13 +284,13 @@
       padding-top: 30px;
       padding-bottom: 8px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         font-size: 22px;
       }
       @media screen and (theme.$tabletSize) {
         font-size: 20px;
       }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         font-size: 18px;
       }
 
@@ -355,13 +309,13 @@
 
       padding-top: 34px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         font-size: 16px;
       }
       @media screen and (theme.$tabletSize) {
         font-size: 14px;
       }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         font-size: 12px;
       }
     }
@@ -371,23 +325,22 @@
     border-radius: 9px;
     border: 1px solid colors.$border03;
     background: colors.$white;
+    font-family: typo.$notosans;
 
-    @media screen and (theme.$desktopSize) {
+    font-weight: 500;
+    line-height: 34px;
+
+    @media screen and ($desktopSize) {
+      font-size: 22px;
       width: 537px;
       height: 60px;
       padding-left: 24px;
       padding-top: 14px;
       padding-bottom: 14px;
     }
-    @media screen and (theme.$tabletSize) {
-      width: 500px;
-      height: 66px;
-      padding-left: 23px;
-      padding-top: 13px;
-      padding-bottom: 13px;
-    }
-    @media screen and (theme.$mobileSize) {
-      width: 470.747px;
+    @media screen and ($mobileSize) {
+      font-size: 18px;
+      width: 100%;
       height: 52.597px;
       padding-left: 21.04px;
       padding-top: 12.27px;
@@ -399,14 +352,12 @@
       font-family: typo.$notosans;
 
       font-weight: 500;
+      line-height: 34px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         font-size: 22px;
       }
-      @media screen and (theme.$tabletSize) {
-        font-size: 20px;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         font-size: 18px;
       }
     }
@@ -420,13 +371,10 @@
     padding-top: 21px;
     padding-bottom: 8px;
 
-    @media screen and (theme.$desktopSize) {
+    @media screen and ($desktopSize) {
       font-size: 22px;
     }
-    @media screen and (theme.$tabletSize) {
-      font-size: 20px;
-    }
-    @media screen and (theme.$mobileSize) {
+    @media screen and ($mobileSize) {
       font-size: 18px;
     }
   }
@@ -443,13 +391,10 @@
       padding-top: 26px;
       padding-bottom: 15px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         font-size: 22px;
       }
-      @media screen and (theme.$tabletSize) {
-        font-size: 20px;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         font-size: 18px;
       }
     }
@@ -466,13 +411,10 @@
 
       padding-top: 30px;
 
-      @media screen and (theme.$desktopSize) {
+      @media screen and ($desktopSize) {
         font-size: 16px;
       }
-      @media screen and (theme.$tabletSize) {
-        font-size: 14px;
-      }
-      @media screen and (theme.$mobileSize) {
+      @media screen and ($mobileSize) {
         font-size: 12px;
       }
     }
@@ -483,16 +425,19 @@
     border: 1px solid colors.$border03;
     background: colors.$white;
 
-    @media screen and (theme.$desktopSize) {
+    padding: 14px 24px;
+    font-family: typo.$notosans;
+
+    font-weight: 500;
+    line-height: 34px;
+    font-size: 22px;
+
+    @media screen and ($desktopSize) {
       width: 537px;
       height: 125px;
     }
-    @media screen and (theme.$tabletSize) {
-      width: 500px;
-      height: 110px;
-    }
-    @media screen and (theme.$mobileSize) {
-      width: 470.747px;
+    @media screen and ($mobileSize) {
+      width: 100%;
       height: 109.578px;
     }
   }
@@ -502,15 +447,11 @@
     font-family: typo.$notosans;
     font-weight: 500;
 
-    @media screen and (theme.$desktopSize) {
+    @media screen and ($desktopSize) {
       font-size: 22px;
       padding-top: 26px;
     }
-    @media screen and (theme.$tabletSize) {
-      font-size: 20px;
-      padding-top: 24px;
-    }
-    @media screen and (theme.$mobileSize) {
+    @media screen and ($mobileSize) {
       font-size: 18px;
       padding-top: 22.79px;
     }
@@ -530,19 +471,19 @@
 
     font-weight: 500;
 
-    @media screen and (theme.$desktopSize) {
+    @media screen and ($desktopSize) {
       font-size: 14px;
       padding-top: 12px;
     }
-    @media screen and (theme.$tabletSize) {
-      font-size: 13px;
-      padding-top: 11px;
-    }
-    @media screen and (theme.$mobileSize) {
+    @media screen and ($mobileSize) {
       font-size: 12px;
       padding-top: 10.52px;
     }
   }
+}
+
+.label-upload {
+  width: 100%;
 }
 
 .btn-upload {
@@ -562,7 +503,6 @@
   margin-bottom: 21px;
   padding-top: 20px;
 }
-
 #file {
   display: none;
 }
