@@ -1,26 +1,24 @@
 @use "../../../../styles/colors";
 @use "../../../../styles/typo";
 
-#features-root{
-  .tab-title-group {
-    display: grid;
-    place-items: center;
-    text-align: center;
-    font-family: typo.$notosans;
-    font-style: normal;
+.tab-title-group {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  font-family: typo.$notosans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  .eng-title {
+    color: colors.$primary;
+    font-size: 20px;
     font-weight: 700;
-    line-height: normal;
-  
-    .eng-title {
-      color: colors.$primary;
-      font-size: 20px;
-      font-weight: 700;
-      margin-top: 80px;
-    }
-  
-    .kor-title {
-      color: colors.$grayscale01;
-      font-size: 30px;
-    }
+    margin-top: 80px;
+  }
+
+  .kor-title {
+    color: colors.$grayscale01;
+    font-size: 30px;
   }
 }
