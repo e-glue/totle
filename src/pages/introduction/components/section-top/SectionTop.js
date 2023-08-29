@@ -28,7 +28,9 @@ const SectionTop = () => {
             무료 계정을 생성해 토틀의 다양한 기능을 활용해보세요!
           </p>
         </div>
-        <div className="subscribe">→ 토틀 구독하기</div>
+        <a href="http://totlelab.com/pricing" className="pricing-link">
+          <div className="subscribe">→ 토틀 구독하기</div>
+        </a>
       </div>
       <div className="video-wrapper">
         <WistiaPlayer
