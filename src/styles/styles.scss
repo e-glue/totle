@@ -2,21 +2,18 @@
 @use "typo";
 @use "theme";
 
-#features-root{
-  .wrap-container {
-    width: 100%;
-    // max-width: 1440px;
-    margin: 0 auto;
-  
-    @media screen and (theme.$desktopSize) {
-      // 데스크탑
-    }
-    @media screen and (theme.$tabletSize) {
-      // 태블릿
-    }
-    @media screen and (theme.$mobileSize) {
-      // 모바일
-    }
+.wrap-container {
+  width: 100%;
+  // max-width: 1440px;
+  margin: 0 auto;
+
+  @media screen and (theme.$desktopSize) {
+    // 데스크탑
   }
-  
+  @media screen and (theme.$tabletSize) {
+    // 태블릿
+  }
+  @media screen and (theme.$mobileSize) {
+    // 모바일
+  }
 }

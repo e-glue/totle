@@ -1,20 +1,18 @@
-// import bigFileImg from '../../assets/features/sending/1-1.png';
-// import notificationImg from '../../assets/features/sending/1-2.png';
-// import sendingImg from '../../assets/features/sending/1-3.png';
-// import macroImg from '../../assets/features/sending/1-4.png';
-// import htmlEditImg from '../../assets/features/sending/1-5.png';
-// import mailEncryptionImg from '../../assets/features/collaboration/2-1.png';
-// import compressionImg from '../../assets/features/collaboration/2-2.png';
-// import externalNotificationImg from '../../assets/features/collaboration/2-3.png';
-// import restrictionImg from '../../assets/features/collaboration/2-4.png';
-// import approvalEmailImg from '../../assets/features/collaboration/2-5.png';
-// import organizationImg from '../../assets/features/security/3-1.png';
-// import emailFormatImg from '../../assets/features/security/3-2.png';
-// import mailContactImg from '../../assets/features/security/3-3.png';
-// import chatImg from '../../assets/features/security/3-4.png';
-// import memoImg from '../../assets/features/security/3-5.png';
-
-import dummy from '../../assets/features/dummy/dummy.png';
+import bigFileImg from '../../assets/features/sending/1-1.png';
+import notificationImg from '../../assets/features/sending/1-2.png';
+import sendingImg from '../../assets/features/sending/1-3.png';
+import macroImg from '../../assets/features/sending/1-4.png';
+import htmlEditImg from '../../assets/features/sending/1-5.png';
+import mailEncryptionImg from '../../assets/features/collaboration/2-1.png';
+import compressionImg from '../../assets/features/collaboration/2-2.png';
+import externalNotificationImg from '../../assets/features/collaboration/2-3.png';
+import restrictionImg from '../../assets/features/collaboration/2-4.png';
+import approvalEmailImg from '../../assets/features/collaboration/2-5.png';
+import organizationImg from '../../assets/features/security/3-1.png';
+import emailFormatImg from '../../assets/features/security/3-2.png';
+import mailContactImg from '../../assets/features/security/3-3.png';
+import chatImg from '../../assets/features/security/3-4.png';
+import memoImg from '../../assets/features/security/3-5.png';
 
 const DATA_SENDING_ORDER = [
   "bigFile", "notification", "sending", "macro", "htmlEdit"
@@ -35,7 +33,7 @@ const DATA_SENDING = {
     buttonLink1:
       "https://www.totlelab.com/features_sendingoptions#s2021082303568a0e0c24b",
     buttonLink2: "https://totle.storylane.io/share/jz0b5bp7kij8",
-    imgsrc: dummy
+    imgsrc: bigFileImg
   },
   "notification":{
     title: "수신확인 및 알림",
@@ -44,7 +42,7 @@ const DATA_SENDING = {
     buttonLink1:
       "https://www.totlelab.com/features_sendingoptions#s20210809f770a1af3315f",
     buttonLink2: "https://totle.storylane.io/share/iywlq8f3qvjx",
-    imgsrc: dummy
+    imgsrc: notificationImg
   },
   "sending":{
     title: "개별 발송",
@@ -53,7 +51,7 @@ const DATA_SENDING = {
     buttonLink1:
       "https://www.totlelab.com/features_sendingoptions#s20210809e7d94995e3c85",
     buttonLink2: "https://totle.storylane.io/share/r9amzlkbmaan",
-    imgsrc: dummy
+    imgsrc: sendingImg
   },
   "macro":{
     title: "매크로 발송 (메일 병합)",
@@ -62,7 +60,7 @@ const DATA_SENDING = {
     buttonLink1:
       "https://www.totlelab.com/features_sendingoptions#s20210824ab61c0a27bf9d",
     //buttonLink2: "",
-    imgsrc: dummy
+    imgsrc: macroImg
   },
   "htmlEdit":{
     title: "HTML 소스 편집",
@@ -71,7 +69,7 @@ const DATA_SENDING = {
     buttonLink1:
       "https://www.totlelab.com/features_sendingoptions#s20210824e7035aba37e0b",
     //buttonLink2: "",
-    imgsrc: dummy
+    imgsrc: htmlEditImg
   }
 };
 
@@ -83,7 +81,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_collaboration#s202108237d3e147493c57",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: organizationImg
     },
       "emailFormat": {
       title: "이메일 서식",
@@ -91,7 +89,7 @@ const DATA_COLLABORATION = {
         "자주 사용하는 이메일 서식 혹은 양식을 이메일 서식으로 저장해 두고 클릭 한 번으로 불러와 사용할 수 있습니다.",
       buttonLink1:"https://www.totlelab.com/features_collaboration#s20210823affe52e29ceca",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: emailFormatImg
     },
       "mailContact": {
       title: "메일 주소록",
@@ -100,7 +98,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_collaboration#s202108268d1fc7f2ed735",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: mailContactImg
     },
       "chat": {
       title: "실시간 채팅",
@@ -109,7 +107,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_collaboration#s202108235506004ac086e",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: chatImg
     },
       "memo": {
       title: "메모",
@@ -118,7 +116,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_collaboration#s202108235b862a5d83236",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: memoImg
     }
   };
   
@@ -130,7 +128,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_emailsecurity#s20210824c0e28ceb6fd42",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: mailEncryptionImg
     },
     "compression": {
       title: "첨부파일 압축 및 암호화",
@@ -139,7 +137,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_emailsecurity#s202108244ad9611509ec7",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: compressionImg
     },
     "externalNotification": {
       title: "외부 수신자 알림",
@@ -148,7 +146,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_emailsecurity#s202108240158104a7d0f3",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: externalNotificationImg
     },
     "restriction": {
       title: "조건부 발송제한",
@@ -157,7 +155,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_emailsecurity#s20210824a28b0a294dc04",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: restrictionImg
     },
     "approvalEmail": {
       title: "승인메일",
@@ -166,7 +164,7 @@ const DATA_COLLABORATION = {
       buttonLink1:
         "https://www.totlelab.com/features_emailsecurity#s20230307e6327eca7e304",
       //buttonLink2: "",
-      imgsrc: dummy
+      imgsrc: approvalEmailImg
     }
   };
 
