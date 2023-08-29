@@ -1,0 +1,53 @@
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
+
+.table-sticky-header {
+  position: sticky;
+  background-color: colors.$white;
+  top: 0px;
+
+  .pricing-sticky-table {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    text-align: center;
+
+    .table-title-en {
+      color: colors.$grayscale01;
+      font-family: typo.$poppins;
+      font-size: 30px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+
+    .table-title-price {
+      color: colors.$grayscale04;
+      font-family: typo.$notosans;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    th {
+      height: 126px;
+      vertical-align: middle;
+      border: 1px solid colors.$border03;
+
+      &:first-child {
+        border: none;
+      }
+    }
+
+    td {
+      background-color: colors.$bg01;
+      border: 1px solid colors.$border03;
+      padding: 24px;
+
+      &:first-child {
+        border: none;
+        border-bottom: 1px solid colors.$border03;
+        background-color: colors.$white;
+      }
+    }
+  }
+}

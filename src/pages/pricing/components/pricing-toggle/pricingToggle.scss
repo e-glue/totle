@@ -1,10 +1,11 @@
-@use "../../../styles/colors";
-@use "../../../styles/typo";
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
 
 .toggle-container {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+  font-family: typo.$notosans;
 }
 
 .btn-color-mode-switch {
@@ -29,8 +30,8 @@
     content: attr(data-on);
     position: absolute;
     font-size: 20px;
-    font-weight: 600;
-    top: 15px;
+    font-weight: 500;
+    top: 14px;
     right: 46px;
     color: colors.$grayscale07;
   }

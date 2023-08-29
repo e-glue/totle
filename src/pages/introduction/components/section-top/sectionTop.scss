@@ -1,0 +1,159 @@
+@use "../../../../styles/colors";
+@use "../../../../styles/typo";
+@use "../../../../styles/theme";
+
+// top section 
+.top-wrapper {
+  width: 844px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 70px;
+  display: flex;
+
+  .introduce-table {
+    padding-bottom: 22px;
+
+    .text-top {
+      color: colors.$primary;
+      font-family: typo.$notosans;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: normal;
+    }
+
+    .text-bottom {
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: normal;
+      padding-bottom: 22px;
+    }
+
+    span {
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .email-table {
+    .email-input {
+      padding: 6px 22px 7px 10px;
+      width: 209px;
+      height: 35px;
+      font-family: typo.$notosans;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-radius: 4px;
+      border: 1px solid colors.$border03;
+      color: colors.$grayscale01;
+      font-size: 15px;
+
+      &::placeholder {
+        color: #D0D0D0;
+      }
+    }
+
+  
+
+    .email-button {
+      margin-left: 9px;
+      font-family: typo.$notosans;
+      width: 142px;
+      height: 35px;
+      border: none;
+      border-radius: 4px;
+      background-color: colors.$primary;
+      color: colors.$white;
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      cursor: pointer;
+    }
+
+    .email-text {
+      margin-top: 10px;
+      color: colors.$grayscale01;
+      font-family: typo.$notosans;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .subscribe {
+    margin-top: 7px;
+    color: colors.$primary;
+    font-family: typo.$notosans;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .video-wrapper {
+    margin-top: 11px;
+    width: 419px;
+    height: 252px;
+    flex-shrink: 0;
+
+    .play-video {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// top section 타블렛  
+@media screen and (theme.$tabletSize) { 
+  .top-wrapper{
+    margin-top: 70px;
+    padding-left: 10px;
+    
+    .introduce-table {
+      .text-top,.text-bottom {
+        font-size: 30px;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .video-wrapper {
+      width: 400px;
+      height: 240px;
+    }
+  }  
+}
+
+// top section 모바일
+@media screen and (theme.$mobileSize) {
+  .top-wrapper {
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .introduce-table {
+      .text-top,.text-bottom{
+        font-size: 30px;
+      }
+      span {
+        font-size: 15px;
+      }
+    }
+
+    .video-wrapper{
+      margin: 14px 0 0 14px;
+    }
+  }
+}
