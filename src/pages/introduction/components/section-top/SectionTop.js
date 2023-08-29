@@ -1,7 +1,24 @@
 import "./sectionTop.scss";
+import { useState } from "react";
 import WistiaPlayer from "../wistia-player/WistiaPlayer";
 
 const SectionTop = () => {
+  const [userEmail, setUserEmail] = useState();
+
+  const checkEmail = () => {
+    const regExp =
+      /^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/;
+    return regExp.test(userEmail);
+  };
+
+  const buttonHandler = (e) => {
+    if (!checkEmail()) {
+      alert("이메일 형식이 올바르지 않습니다.");
+      e.preventDefault();
+      setUserEmail("");
+    }
+  };
+
   return (
     <div className="top-wrapper">
       <div className="title-wrapper">
@@ -20,8 +37,20 @@ const SectionTop = () => {
               <input
                 className="email-input"
                 placeholder="이메일 주소를 입력해주세요."
+                value={userEmail}
+                required
+                onChange={(e) => {
+                  setUserEmail(e.target.value);
+                }}
               ></input>
-              <button className="email-button">계정 생성하기</button>
+              <button
+                className="email-button"
+                onClick={(e) => {
+                  buttonHandler(e);
+                }}
+              >
+                계정 생성하기
+              </button>
             </form>
           </div>
           <p className="email-text">
