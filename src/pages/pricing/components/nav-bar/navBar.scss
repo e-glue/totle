@@ -1,4 +1,6 @@
 @use "../../../../styles/colors";
+@use "../../../../styles/typo";
+@use "../../../../styles/theme";
 
 .nav-bar {
   height: 127px;
@@ -6,9 +8,29 @@
   background: colors.$white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   width: 150px;
   height: 53px;
+}
+
+.nav-menu-ul {
+  display: flex;
+  gap: 24px;
+
+  .nav-menu-li {
+    font-family: typo.$poppins;
+    color: colors.$grayscale07;
+    font-size: 18px;
+  }
+
+  .nav-link {
+    text-decoration: none;
+  }
+
+  @media screen and (theme.$mobileSize) {
+    display: none;
+  }
 }

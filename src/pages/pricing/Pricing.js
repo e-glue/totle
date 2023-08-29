@@ -12,7 +12,6 @@ const Pricing = () => {
 
   return (
     <>
-      <NavBar />
       <PlanSection
         onChangeToggleHandler={onChangeToggleHandler}
         isToggle={isToggle}
