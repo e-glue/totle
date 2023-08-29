@@ -90,15 +90,21 @@
     }
   }
 
-  .subscribe {
-    margin-top: 7px;
-    color: colors.$primary;
-    font-family: typo.$notosans;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  .pricing-link {
+    text-decoration: none;
+    
+    .subscribe {
+      margin-top: 7px;
+      color: colors.$primary;
+      font-family: typo.$notosans;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
   }
+
+
 
   .video-wrapper {
     margin-top: 11px;
