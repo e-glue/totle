@@ -17,9 +17,10 @@ const Contact = () => {
       inputEl.current.addEventListener("input", fileInputHandler);
     }
     return () => {
-      inputEl.current.removeEventListener("input", fileInputHandler);
+      inputEl.current &&
+        inputEl.current.removeEventListener("input", fileInputHandler);
     };
-  }, []);
+  }, [inputEl, fileInputHandler]);
 
   return (
     <>
@@ -149,7 +150,7 @@ const Contact = () => {
                 </div>
                 <div className="required">*필수 입력값입니다.</div>
               </div>
-              <input className="input-q"></input>
+              <textarea className="input-q"></textarea>
               <div className="error-file-upload">
                 오류 시 생성되는 오류 로그 파일을 첨부해주세요.
               </div>
