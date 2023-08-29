@@ -138,8 +138,7 @@
 // top section 모바일
 @media screen and (theme.$mobileSize) {
   .top-wrapper {
-    padding-left: 20px;
-    width: 100%;
+    max-width: 360px;
     display: flex;
     flex-direction: column;
 
@@ -153,6 +152,7 @@
     }
 
     .video-wrapper{
+      max-width: 320px;
       margin: 14px 0 0 14px;
     }
   }
