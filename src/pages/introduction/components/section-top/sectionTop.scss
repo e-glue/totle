@@ -91,16 +91,20 @@
       }
     }
   
-    .subscribe {
-      margin-top: 7px;
-      color: colors.$primary;
-      font-family: typo.$notosans;
-      font-size: 15px;
-      font-style: normal;
-      font-weight: 700;
-      line-height: normal;
+    .pricing-link {
+      text-decoration: none;
+
+      .subscribe {
+        margin-top: 7px;
+        color: colors.$primary;
+        font-family: typo.$notosans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
     }
-  
+
     .video-wrapper {
       margin-top: 11px;
       width: 419px;
@@ -139,8 +143,7 @@
   // top section 모바일
   @media screen and (theme.$mobileSize) {
     .top-wrapper {
-      padding-left: 20px;
-      width: 100%;
+      max-width: 360px;
       display: flex;
       flex-direction: column;
   
@@ -154,6 +157,7 @@
       }
   
       .video-wrapper{
+        max-width: 320px;
         margin: 14px 0 0 14px;
       }
     }

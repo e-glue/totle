@@ -33,7 +33,7 @@
   
   @media screen and (theme.$mobileSize) { 
     .banner-list {
-      width: 430px;
+      max-width: 360px;
     }
   }
   
