@@ -1,4 +1,4 @@
-# toddle
+# totle
 
 # 프로젝트 세팅
 - react 18버전 사용
