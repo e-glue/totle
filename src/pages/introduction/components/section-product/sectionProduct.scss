@@ -91,6 +91,7 @@
 // product section 모바일 
 @media screen and (theme.$mobileSize) {
   .product-wrapper {
+    margin-top: 24px;
     padding: 49px 0 52px 0;
     .product-text {
       .t1 {
@@ -102,7 +103,7 @@
     }
 
     .product-frame{
-      width: 440px;
+      max-width: 95%;
     }
   }
 }
